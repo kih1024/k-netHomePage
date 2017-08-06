@@ -1,0 +1,109 @@
+﻿body { 
+  background-color: #b5a789;
+  font-family:      Georgia, "Times New Roman", Times, serif;
+  font-size:        small;
+  margin:           0px;
+}
+
+header {
+	background-color: #675c47;
+	margin: 10px 10px 0px 10px;
+	height:           150px;
+}
+
+nav	{
+	background-color: #efe5d0;
+	margin: 10px 10px 0px 10px;
+}
+nav ul {
+	margin: 0px;
+	list-style-type: none;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li{
+	display: inline;
+	padding: 5px 20px 5px 20px;
+}
+
+
+#tableContainer {
+	display: table;
+	border-spacing: 10px;
+	width: 100%;
+}
+
+#tableRow {
+	display: table-row;
+}
+
+section#side {
+    display: table-cell;
+    background-color: #efe5d0;
+    width: 20%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+section#main {
+  display: table-cell;
+    background-color: #efe5d0;
+  font-size:        105%;
+
+  padding:          15px;
+  vertical-align: top;
+}
+/*갤러리*/
+.sub_photo ul {
+	list-style-type: none;
+	overflow: auto;
+	padding: 5px 0px 5px 0px;
+	text-align:center;
+}
+.sub_photo ul li{
+	float: left;
+	padding: 5px 20px 5px 20px;
+}
+.sub_photo li img{
+	width:240px; 
+	height:200px;
+	margin-bottom:3px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.sub_photo .photo{
+	margin-bottom:3px;
+}
+.sub_photo p.tx_brief{
+	margin-top:3px;
+}
+.sub_photo div.title_area {
+	text-align:center;
+}
+/*각게시판 페이징 */
+.paginate { 
+	padding:16px 0 0;
+	text-align:center;
+}
+
+.paginate a,.paginate strong{
+	margin-right:1px;
+	padding: 2px 4px 3px; 
+	border: 1px; solid #f5f2ed;
+	color: #666;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: normal;
+	text-decoration;none;
+}
+	
+
+footer {
+  background-color: #675c47;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin: 0px 10px 10px 10px;
+  font-size:        90%;
+}
