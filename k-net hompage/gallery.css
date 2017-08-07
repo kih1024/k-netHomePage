@@ -7,14 +7,21 @@
 
 header {
 	background-color: #675c47;
-	margin: 10px 10px 0px 10px;
+	margin: 50px 10px 0px 10px;
 	height:           150px;
 }
 
 nav	{
 	background-color: #efe5d0;
-	margin: 10px 10px 0px 10px;
 }
+
+#top_menu{
+    position: fixed;
+    width: 100%;
+    left:0;
+    top:0;
+}
+
 nav ul {
 	margin: 0px;
 	list-style-type: none;

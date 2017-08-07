@@ -4,14 +4,17 @@
     <meta charset="euc-kr">
     <title>k-net 홈페이지(갤러리)</title>
     <link rel="stylesheet" type="text/css" href="gallery.css">
+    <script src="./jquery.js"></script>
+    <script>
+    	$(document).ready(function(){
+    	})
+
+    </script>
   </head> 
 
   <body>
-    <header class="top">
-		<p>상단</p>
-    </header>
 
-	<nav>
+	<nav id="top_menu">
 	<ul>
 		<li><a href="">home(이미지)</a></li>
 		<li><a href="">K-NET</a></li>
@@ -22,6 +25,10 @@
 		<li><input type="submit" value="검색(이미지)"></li>
 	</ul>
 	</nav>
+
+    <header class="top">
+		<p>상단</p>
+    </header>
 
 	<div id="tableContainer">
 	<div id="tableRow">
