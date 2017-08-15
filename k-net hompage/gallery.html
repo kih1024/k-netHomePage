@@ -7,135 +7,171 @@
     <script src="./jquery.js"></script>
     <script>
     	$(document).ready(function(){
-    	})
+    		$("#more_menu").click(function(){
+    			$("ul.top_submenu").toggleClass("show_submenu_ul");
+    			$("div.header").toggleClass("show_submenu_div");
+    		});
+    	});
 
     </script>
   </head> 
 
   <body>
+	  <div id="all_div">
+		<div id="top_menu">
+		<ul>
+			<li class="top_menu">
+			<a href="">home(이미지)</a>
+				<ul class="top_submenu">
+					<li><a href="#">submenu_1</a></li>
+					<li><a href="#">submenu_2</a></li>
+					<li><a href="#">submenu_3</a></li>
+				</ul>
+			</li>
+			<li class="top_menu"><a href="">K-NET</a>
+				<ul class="top_submenu">
+					<li><a href="#">submenu_1</a></li>
+					<li><a href="#">submenu_2</a></li>
+					<li><a href="#">submenu_3</a></li>
+				</ul>
+			</li>
+			<li class="top_menu"><a href="">공지사항</a>
+				<ul class="top_submenu">
+					<li><a href="#">submenu_1</a></li>
+					<li><a href="#">submenu_2</a></li>
+					<li><a href="#">submenu_3</a></li>
+				</ul>
+			</li>
+			<li class="top_menu"><a href="">자료실</a>
+				<ul class="top_submenu">
+					<li><a href="#">submenu_1</a></li>
+					<li><a href="#">submenu_2</a></li>
+					<li><a href="#">submenu_3</a></li>
+				</ul>
+			</li>
+			<li class="top_menu"><a href="">커뮤니티</a>
+				<ul class="top_submenu">
+					<li><a href="#">submenu_1</a></li>
+					<li><a href="#">submenu_2</a></li>
+					<li><a href="#">submenu_3</a></li>
+				</ul>
+			</li>
+			<li class="top_menu"><span id="more_menu">더보기</span></li>
+			<li class="top_menu"><input type="submit" value="로그인"></li>
+			<li class="top_menu"><input type="submit" value="검색(이미지)"></li>
+		</ul>
+		</div>
 
-	<nav id="top_menu">
-	<ul>
-		<li><a href="">home(이미지)</a></li>
-		<li><a href="">K-NET</a></li>
-		<li><a href="">공지사항</a></li>
-		<li><a href="">자료실</a></li>
-		<li><a href="">커뮤니티</a></li>
-		<li><input type="submit" value="로그인"></li>
-		<li><input type="submit" value="검색(이미지)"></li>
-	</ul>
-	</nav>
+		<div class="header">
+				<p>상단</p>
+	    </div>
 
-    <header class="top">
-		<p>상단</p>
-    </header>
+		<div id="tableContainer">
+		<div id="tableRow">
 
-	<div id="tableContainer">
-	<div id="tableRow">
+		<section id="side">
+			<h1>로그인창 or 회원정보창</h1>
+			<p>내용들 ... </p>
+		</section>
 
-	<section id="side">
-		<h1>로그인창 or 회원정보창</h1>
-		<p>내용들 ... </p>
-	</section>
+		<section id="main">
 
-	<section id="main">
+	<!-- 갤러리 시작-->
 
-<!-- 갤러리 시작-->
+	<div class="sub_photo">
+		<div class="title_area">
+			<h2 class="title"><strong>갤러리</strong></h2>
+		</div>
+		<ul>
+		<li>
+			<p class="photo">
+				<a href="#">
+					<img src="../images/seattle_classic.jpg" alt="이미지">
+				</a>
+			</p>
+			<a href="#"><strong>제목부분1</strong></a>
+			<p class="tx_brief">2017-08-03</p>
+		</li>
+		<li>
+			<p class="photo">
+				<a href="#">
+					<img src="../images/seattle_classic.jpg" alt="이미지">
+				</a>
+			</p>
+			<a href="#"><strong>제목부분2</strong></a>
+			<p class="tx_brief">2017-08-03</p>
+		</li>
+		<li>
+			<p class="photo">
+				<a href="#">
+					<img src="../images/seattle_classic.jpg" alt="이미지">
+				</a>
+			</p>
+			<a href="#"><strong>제목부분3</strong></a>
+			<p class="tx_brief">2017-08-03</p>
+		</li>
+		<li>
+			<p class="photo">
+				<a href="#">
+					<img src="../images/seattle_classic.jpg" alt="이미지">
+				</a>
+			</p>
+			<a href="#"><strong>제목부분4</strong></a>
+			<p class="tx_brief">2017-08-03</p>
+		</li>
+		<li>
+			<p class="photo">
+				<a href="#">
+					<img src="../images/seattle_classic.jpg" alt="이미지">
+				</a>
+			</p>
+			<a href="#"><strong>제목부분5</strong></a>
+			<p class="tx_brief">2017-08-03</p>
+		</li>
+		<li>
+			<p class="photo">
+				<a href="#">
+					<img src="../images/seattle_classic.jpg" alt="이미지">
+				</a>
+			</p>
+			<a href="#"><strong>제목부분6</strong></a>
+			<p class="tx_brief">2017-08-03</p>
+		</li>
 
-<div class="sub_photo">
-	<div class="title_area">
-		<h2 class="title"><strong>갤러리</strong></h2>
+		</ul>
+		</div>
+		<!-- 추후 php 반복문을 써서 반복 구현-->
+		<!-- 갤러리끝 -->
+
+		<!-- 페이징 시작-->
+		<div class="paginate">
+		<a class="pre" href="#">이전</a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<strong>5</strong> <!--선택된페이지 -->
+		<a href="#">6</a>
+		<a href="#">7</a>
+		<a href="#">8</a>
+		<a href="#">9</a>
+		<a href="#">10</a>
+		<a class="next" href="#">다음</a>
+		</div>
+		<!-- 이 부분도 추후 php 반복문을 써서 반복 구현-->
+		<!-- 페이징 끝-->
+		</div>
+		</section>
+
+		</div> <!-- tableRow -->
+		</div> <!-- tableContainer -->
+
+	    <footer>
+	      &copy; 2017, 케이넷 홈페이지
+	      <br>
+	      이 사이트의 모든 상표와 등록된 상표는 해당 소유자의 자산입니다.
+	    </footer>
 	</div>
-	<ul>
-	<li>
-		<p class="photo">
-			<a href="#">
-				<img src="../images/seattle_classic.jpg" alt="이미지">
-			</a>
-		</p>
-		<a href="#"><strong>제목부분1</strong></a>
-		<p class="tx_brief">2017-08-03</p>
-	</li>
-	<li>
-		<p class="photo">
-			<a href="#">
-				<img src="../images/seattle_classic.jpg" alt="이미지">
-			</a>
-		</p>
-		<a href="#"><strong>제목부분2</strong></a>
-		<p class="tx_brief">2017-08-03</p>
-	</li>
-	<li>
-		<p class="photo">
-			<a href="#">
-				<img src="../images/seattle_classic.jpg" alt="이미지">
-			</a>
-		</p>
-		<a href="#"><strong>제목부분3</strong></a>
-		<p class="tx_brief">2017-08-03</p>
-	</li>
-	<li>
-		<p class="photo">
-			<a href="#">
-				<img src="../images/seattle_classic.jpg" alt="이미지">
-			</a>
-		</p>
-		<a href="#"><strong>제목부분4</strong></a>
-		<p class="tx_brief">2017-08-03</p>
-	</li>
-	<li>
-		<p class="photo">
-			<a href="#">
-				<img src="../images/seattle_classic.jpg" alt="이미지">
-			</a>
-		</p>
-		<a href="#"><strong>제목부분5</strong></a>
-		<p class="tx_brief">2017-08-03</p>
-	</li>
-	<li>
-		<p class="photo">
-			<a href="#">
-				<img src="../images/seattle_classic.jpg" alt="이미지">
-			</a>
-		</p>
-		<a href="#"><strong>제목부분6</strong></a>
-		<p class="tx_brief">2017-08-03</p>
-	</li>
-
-	</ul>
-	</div>
-	<!-- 추후 php 반복문을 써서 반복 구현-->
-	<!-- 갤러리끝 -->
-
-	<!-- 페이징 시작-->
-	<div class="paginate">
-	<a class="pre" href="#">이전</a>
-	<a href="#">1</a>
-	<a href="#">2</a>
-	<a href="#">3</a>
-	<a href="#">4</a>
-	<strong>5</strong> <!--선택된페이지 -->
-	<a href="#">6</a>
-	<a href="#">7</a>
-	<a href="#">8</a>
-	<a href="#">9</a>
-	<a href="#">10</a>
-	<a class="next" href="#">다음</a>
-	</div>
-	<!-- 이 부분도 추후 php 반복문을 써서 반복 구현-->
-	<!-- 페이징 끝-->
-	</div>
-	</section>
-
-	</div> <!-- tableRow -->
-	</div> <!-- tableContainer -->
-
-    <footer>
-      &copy; 2017, 케이넷 홈페이지
-      <br>
-      이 사이트의 모든 상표와 등록된 상표는 해당 소유자의 자산입니다.
-    </footer>
-
   </body>
 </html>
 
