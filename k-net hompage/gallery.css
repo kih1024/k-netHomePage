@@ -5,6 +5,10 @@
   margin:           0px;
 }
 
+#main_board{
+	clear: left;
+}
+
 div.header {
 	background-color: #675c47;
 	margin: 50px 10px 0px 10px;
@@ -69,8 +73,7 @@ ul.show_submenu_ul{
 }
 
 div.show_submenu_div{
-	margin: 134px 10px 0px 10px;
-	height:           150px;
+	margin: 134px 0 0 0;
 }
 
 #tableContainer {
