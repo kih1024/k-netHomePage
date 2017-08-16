@@ -188,6 +188,7 @@ a{
 	z-index: 100;
 	border-bottom: 1px solid #d1d8e4;
 	background: #fff;
+	float: left;
 }
 
 .area_logo{
@@ -198,6 +199,7 @@ a{
 	margin: 0 auto;
 	width: 1080px;
 	height: 100px;
+	float: left;
 }
 
 .area_logo h1{
@@ -215,6 +217,7 @@ a{
 	background-position: 0 0;
 	text-indent: 101%
 	white-space: nowrap;
+	float: left;
 }
 
 .column_left{
