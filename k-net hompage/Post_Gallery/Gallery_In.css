@@ -1,0 +1,157 @@
+/*
+	made by Yang Ji Yong
+	made at 2017-07-30
+	Notice_List.php's sytle file
+*/
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	min-height: 100%;
+}
+
+body{
+	width: 960px;
+	overflow: auto;
+}
+
+div{
+	display: block;
+}
+
+#main_border_div_id{
+	padding: 0 10px;
+	float: left;
+}
+
+#wrapper_div_id{
+	width: 950px;
+	float: left;
+}
+
+#top_div_id{
+	width: 100%;
+	height: 200px;
+	background-color: pink;
+	float: left;
+}
+
+div.top_div_class{
+	background-color: inherit;
+}
+
+#center_div_id{
+	width: 100%;
+	float: right;
+}
+
+div.center_div_class{
+	width: 100%;
+	background-color: inherit;
+	float: left;
+}
+
+#post_head_div_id{
+	/*up, right, down, left*/
+	margin: 30px 0 0 130px;
+	width: 504px;
+	float: left;
+}
+
+#post_view_div_id{
+	width: 580px;
+	/*up, right, down, left*/
+	margin: 20px 90px 0 90px;
+	background-color: inherit;
+	float: left;
+}
+
+#post_view_id{
+	font-size: 9pt;
+}
+
+span.post_span_class{
+	font-size: 11pt;
+}
+
+span.post_title_span_id{
+	font-size: 11pt;
+	float: left;
+}
+
+span.post_author_span_id{
+	margin-left: 11px;
+	float: left;
+}
+
+span.post_date_span_id{
+	margin-left: 11px;
+	float: left;
+}
+
+span.post_view_span_id{
+	margin-left: 11px;
+	text-align: left;
+}
+
+table{
+	width: 100%;
+}
+
+tbody{
+	text-align: left;
+}
+
+td{
+	/*up, right, down, left*/
+	padding: 4px 0 0 10px;
+}
+
+div.page_list_div_class{
+	/*up, right, down, left*/
+	margin: 40px 150px 10px 0;
+	text-align: center;
+	float: left;
+}
+
+a.a_class{
+	/*up, right, down, left*/
+	padding: 0 1px 0 1px;
+}
+
+/*휘하 4개 마우스오버 했을때만 밑줄생성*/
+/*보통 때*/
+a:link.a_class{
+	text-decoration: none;
+	color: black;
+}
+
+/*방문한적있음*/
+a:visited.a_class{
+	text-decoration: none;
+	color: black;
+}
+
+/*링크위 마우스오버*/
+a:hover.a_class{
+	text-decoration: underline;
+	color: red;
+}
+
+/*마우스로만 선택해 둔 상태*/
+a:active.a_class{
+	text-decoration: none;
+	color: black;
+}
+
+div.left180{
+	/*up, right, down, left*/
+	margin: 0 0 0 280px;
+}
+
+#postW_btn_div_id{
+	/*up, right, down, left*/
+	margin: 40px 80px 0 0;
+	float: right;
+}

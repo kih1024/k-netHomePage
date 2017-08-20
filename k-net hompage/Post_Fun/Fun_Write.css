@@ -41,25 +41,13 @@ div.top_div_class{
 	background-color: inherit;
 }
 
-#left_div_id{
-	width: 200px;
-	height: 400px;
-	background-color: #ccffee;
-	float: left;
-}
-
-div.left_div_class{
-	background-color: inherit;
-}
-
 #center_div_id{
-	width: 750px;
-	height: 400px;
+	width: 100%;
 	float: right;
 }
 
 div.center_div_class{
-	width: 750px;
+	width: 100%;
 	background-color: inherit;
 	float: left;
 }

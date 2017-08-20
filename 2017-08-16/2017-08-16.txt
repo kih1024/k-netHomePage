@@ -1,0 +1,26 @@
+﻿//2017-08-16 수정 사항
+유림-
+main.html ID/PW Search 하나로 묶어 event Handler 묶기
+main.html top_subMenu 부분 event Handler 생성
+main.html div부분 float, clear 넣어두기
+main.html ID, Password input class에 size, position:relative 추가하기
+
+예지-
+layout.html textarea부분 text로 수정하여 height 설정 되는지 확인
+layout.html input type="text"부분 width를 설정하여 div 넘어가지 않도록 하기
+
+지용-
+Post_Menu부분 table 밑 border img였던것 수정하기
+Post_Write부분 사용가능하도록 수정해보기
+
+지용,인호-
+상단 메뉴 gallery.html에서 div id="top_menu" main.html에 옮긴 뒤
+header부분 html로 따로 만들어서 frameset이용 고정,
+상단 메뉴 이동 되는지 확인(css에서 해당 id, class 부분도 옮길 것)
+
+예지-
+-main.html에서 각 페이지별로 Link 연결
+
+모두-
+-각 게시글 부분에서 Left div 모두 삭제
+-span을 a로 바꾸어 style 수정해두기 non-decoration

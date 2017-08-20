@@ -8,8 +8,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="./Post_In.css">
-	<title>K-net 홈페이지 게시판 글쓰기</title>
+<link rel="stylesheet" type="text/css" href="./Q&A_In.css">
+	<title>K-net 홈페이지 질문 게시판 글</title>
 </head>
 <body>
 	<!-- 전체 div -->
@@ -19,12 +19,6 @@
 			<div id="top_div_id">
 				<div class="top_div_class">
 					top
-				</div>
-			</div>
-
-			<div id="left_div_id">
-				<div class="left_div_class">
-					left
 				</div>
 			</div>
 

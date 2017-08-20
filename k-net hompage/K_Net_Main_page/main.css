@@ -25,6 +25,11 @@ body{
 	backface-visibility: hidden; 
 }
 
+.int{
+	width: 150px;
+	position: relative;
+}
+
 body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{
 	margin: 0px;
 	padding: 0px;
@@ -483,3 +488,4 @@ a{
 	text-align: left;
 	zoom: 1;
 }
+
