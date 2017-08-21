@@ -130,7 +130,7 @@ a{
 	background-position-y: -78px;
 }
 
-.area_navigation .login .an_icon{
+.area_navigation .more .an_icon{
 	width: 25px;
 	height: 16px;
 	background-position-x: -131px;
@@ -138,7 +138,7 @@ a{
 }
 
 
-.area_navigation .an_btn_more{
+.area_navigation .an_btn_login{
 	position: relative;
 	float: left;
 	/* margin-top: 16px; */
@@ -250,6 +250,15 @@ a{
 	height: 118px;
 }
 
+.login .btn_login{
+	position: absolute;
+	left: 260px;
+	top: 20px;
+	z-index: 1;
+	width: 65px;
+	height: 65px;
+}
+
 .search{
 	position: relative;
 	margin: 8px 0;
@@ -258,6 +267,16 @@ a{
 	height: 30px;
 	border: 1px solid #dee3eb;
 	background: #fff;
+}
+
+.search .sch_smit{
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	overflow: visible;
+	width: 26px;
+	height: 26px;
+	border: 1;
 }
 
 .birthday_in_this_month{
@@ -320,6 +339,7 @@ a{
 	height: 11px;
 	border-left: 1px solid #ebeef3;
 	text-align: center;
+	border: 1;
 }
 
 .section_birthday .ico_btn_next{
