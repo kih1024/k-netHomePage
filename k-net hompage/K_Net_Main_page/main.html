@@ -1,221 +1,269 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <div style="display: none;">
-	<input name="jindo1502278985252" type="input"/>
+    <input name="jindo1502278985252" type="input" />
 </div>
 <head>
-	<meta charset="utf-8"/>
-	<title>Welcome to K-net</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8" />
+    <title>Welcome to K-net</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="./jquery.js"></script>
+
+    
+    <script>
+        window.onpopstate = popState;
+        var state = { currneturl : "main.html #Intructions" };
+        $(document).ready(function () {
+            $("#Show1").click(function () {
+                history.pushState(state,"","");
+                $("#Intructions").load("main.html #Intructions");
+            });
+            $("#Show2").click(function () {
+                history.pushState(state, "", "");
+                $("#Intructions").load("HtmlSamplePage.html");
+            });
+            $("#Show3").click(function () {
+                history.pushState(state, "", "");
+                $("#Intructions").load("HtmlSamplePage.html");
+            });
+            $("#Show4").click(function () {
+                history.pushState(state, "", "");
+                $("#Intructions").load("HtmlSamplePage.html");
+            });
+            $("#Show5").click(function () {
+                history.pushState(state, "", "");
+                $("#Intructions").load("HtmlSamplePage.html");
+            });
+            $("#Show6").click(function () {
+                history.pushState(state, "", "");
+                $("#Intructions").load("HtmlSamplePage.html");
+            });
+        });
+
+        function popState(event) {
+            if(event.state)
+            {
+                state = event.state;
+                $("#Intructions").load(state.currneturl);
+            }
+        }
+
+    </script>
 </head>
 
 <body class="">
-	<div class="container" role="main">
-	<div class="container1" role="topbar">
-		<div id="section_navbar">
-			<div class="area_navigation" role="navigation">
-				<ul class="an_1">
-					<li class="an_item">
-						<a class="an_a home" href="http://www.k-net.com/" data-clk="svc.home">
-							<span class="an_icon"></span>
-							<span class-"an_text">Home</span>
-						</a>
-					</li>
-					<div class="an_bar"></div>
-					<li class="an_item">
-						<a class="an_a knet" href="http://knet.k-net.com/" data-clk="svc.knet">
-							<span class="an_icon"></span>
-							<span class-"an_text">K-Net</span>
-						</a>
-					</li>
-					<div class="an_bar"></div>
-					<li class="an_item">
-						<a class="an_a notice" href="http://notice.k-net.com/" data-clk="svc.notice">
-							<span class="an_icon"></span>
-							<span class-"an_text">Notice</span>
-						</a>
-					</li>
-					<div class="an_bar"></div>
-					<li class="an_item">
-						<a class="an_a materials" href="http://materials.k-net.com/" data-clk="svc.materials">
-							<span class="an_icon"></span>
-							<span class-"an_text">Material</span>
-						</a>
-					</li>
-					<div class="an_bar"></div>
-					<li class="an_item">
-						<a class="an_a community" href="http://community.k-net.com/" data-clk="svc.community">
-							<span class="an_icon"></span>
-							<span class-"an_text">Community</span>
-						</a>
-					</li> 
-					<div class="an_bar"></div>
-					<li class="an_item">
-						<a class="an_a login" href="http://login.k-net.com/" data-clk="svc.login">
-							<span class="an_icon"></span>
-							<span class="an_text">Login</span>
-						</a>
-					</li>
-				</ul>
-				<div class="an_bar"></div>
-				<a class="an_btn_more" id="btnServiceMore" role="button" href="#" data-clk="svc.more">
-					<span class="an_mtxt">
-						<span class="blind">More</span>
-					</span>
-					<span class="ico_an_more">More</span>
-				</a> 
-				<div class="an_bar"></div>
-			</div>
-		</div>
-	</div>
+    <div class="container" role="main">
+        <div class="container1" role="topbar">
+            <div id="section_navbar">
+                <div class="area_navigation" role="navigation">
+                    <ul class="an_1">
+                        <li class="an_item">
+                            <a class="an_a home" href="#" data-clk="svc.home" id="Show1">
+                                <span class="an_icon"></span>
+                                <span class-"an_text"= class="an_text">Home</span>
+                            </a>
+                        </li>
+                        <div class="an_bar"></div>
+                        <li class="an_item">
+                            <a class="an_a home" href="#" data-clk="svc.home" id="Show2">
+                                <span class="an_icon"></span>
+                                <span class-"an_text"= class="an_text">K-NET</span>
+                                </a> 
+</li>
+                        <div class="an_bar"></div>
+                        <li class="an_item">
+                            <a class="an_a notice" href="#" data-clk="svc.notice" id="Show3">
+                                <span class="an_icon"></span>
+                                <span class-"an_text"= class="an_text">Notice</span>
+                            </a>
+                        </li>
+                        <div class="an_bar"></div>
+                        <li class="an_item">
+                            <a class="an_a materials" href="#" data-clk="svc.materials" id="Show4">
+                                <span class="an_icon"></span>
+                                <span class-"an_text"= class="an_text">Material</span>
+                            </a>
+                        </li>
+                        <div class="an_bar"></div>
+                        <li class="an_item">
+                            <a class="an_a community" href="#" data-clk="svc.community" id="Show5">
+                                <span class="an_icon"></span>
+                                <span class-"an_text"= class="an_text">Community</span>
+                            </a>
+                        </li>
+                        <div class="an_bar"></div>
+                        <li class="an_item">
+                            <a class="an_a login" href="#" data-clk="svc.login" id="Show6">
+                                <span class="an_icon"></span>
+                                <span class="an_text">Login</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="an_bar"></div>
+                    <a class="an_btn_more" id="btnServiceMore" role="button" href="#" data-clk="svc.more">
+                        <span class="an_mtxt">
+                            <span class="blind">More</span>
+                        </span>
+                        <span class="ico_an_more">More</span>
+                    </a>
+                    <div class="an_bar"></div>
+                </div>
+            </div>
+        </div>
 
-		<div class="header" role="banner">
-			<div class="area_logo">
-				<h1>
-					<a href="/" data-clk="top.logo">
-						<span class="knet_logo">K-NET logo</span>
-					</a>
-				</h1>
-			</div>
-		</div>
+        <div class="header" role="banner">
+            <div class="area_logo">
+                <h1>
+                    <a href="/" data-clk="top.logo">
+                        <span class="knet_logo">K-NET logo</span>
+                    </a>
+                </h1>
+            </div>
+        </div>
 
-	<div class="container2" role="main">
-		<div class="column_left">
-			<!-- login -->
-			<div class="section_login" id="account">
-				<div class="login" id="loginframe">
-					<div class="login_wrap">
-						<div class="error_box" style=""></div>
-						<div class="login">
-							<form name="IDLogin" id="IDLogin" action="" method="post" target="_top">
-								<fieldset>
-									<legend class="blind">LOGIN</legend>
-									<div class="htmlarea" id="htmlarea" style="">
-										<div class="input_box">
-											<label class="lbl_in" id="label_id" for="id"></lable>
-											<input name="id" title="ID" class="int" id="id" style="" type="text" maxlength="40" placeholder="ID"/>
-										</div>
-										<div class="input_box">
-											<label calss="lbl_in" id="label_pw" for="pw"></label>
-											<input name="pw" title="password" class="int" id="pw" type="password" maxlength=40 placeholder="password"/>
-										</div>
-									</div>
-									<span class="btn_login">
-										<input title="LOGIN" type="submit" value="Login"/>
-									</span>
-									<p class="btn_lnk">
-										<a class="btn_join" href="" target="_blank">Join</a>
-										<a class="btn_id" href="">ID
-											<span class="blind">Search</span>
-										</a>
-										/
-										<a href="" target="_blank">Search Password</a>
-									</p>
-								</fieldset>
-							</form>
-						</div>
-						<script src="" type="txt/javascript"></script>
-						<script type="text/javascript">var useWideLoginboxFlash=true;</script>
-					</div>
-				</div>
-			</div>
-			<div class="search">
-				<form name="sform" id="sform" action="" method="get">
-					<fieldset>
-						<legend class="blind">SEARCH</legend>
-						<select name="where" title="search area" class="blind" id="where">
-							<option selected="selected" value="nexearch">all search</option>
-						</search>
-						<span calss="search_window">
-							<input name="query" tabindex="1" title="search" class="input_text" id="query" accesskey="" style="" onclick="" type="text" maxlength="" placeholder="Search"/>
-						</span>
-						<button tabindex="3" title="search" class="sch_smit" id="search_btn" onmouseover="this.className='sch_smit over'" onmouseout="this.className='sch_smit'" onmousedown="this.className='sch_smit down'" onclick="" type="submit">
-							<span class="blind">SEARCH</span>
-							<span class="ico_search_submit"></span>
-						</button>
-					</fieldset>
-				</form>
-			</div>
-			<div class="birthday_in_this_month">
-				<div class="section_birthday" data-code-"birthday" text-align="horizontal">
-					<h3 class="blind">BIRTHDAY</h3>
-					<div class="area_header_birthday">
-						<div class="birthday_info">
-							<a class="hi_date" href="https://calendar.naver.com" data-clk="squ.date">
-								<span class="hi_dnum">August</span>
-								<span class="hi_day"> 2nd Birthday</span>
-							</a>
-						</div>
-						<div class="header_paging_navi">
-							<b class="hp_curr">1</b>
-							/
-							<span class="hp_total">3</span>
-						</div>
-						<div class="header_btns">
-							<a class="header_btn_prev" href="#" data-clk="squ.pre">
-								<i class="ico_btn_prev" aria-hidden="true"></i>
-								<span class="blind">prev</span>
-							</a> 
-							<a class="header_btn_next" href="#" data-clk="squ.next">
-								<i class="ico_btn_next" aria-hidden="true"></i>
-								<span class="blind">next</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="facebook">
-				<a class="facebook" href="https://www.facebook.com.kwtalk/?fref=ts">Facebook</a>
-			</div>
-		</div>
+        <div id="Intructions" class="container2" role="main">
+            <div class="column_left">
+                <!-- login -->
+                <div class="section_login" id="account">
+                    <div class="login" id="loginframe">
+                        <div class="login_wrap">
+                            <div class="error_box" style=""></div>
+                            <div class="login">
+                                <form name="IDLogin" id="IDLogin" action="" method="post" target="_top">
+                                    <fieldset>
+                                        <legend class="blind">LOGIN</legend>
+                                        <div class="htmlarea" id="htmlarea" style="">
+                                            <div class="input_box">
+                                                <label class="lbl_in" id="label_id" for="id">
+                                                    </lable>
+                                                    <input name="id" title="ID" class="int" id="id" style="" type="text" maxlength="40" placeholder="ID" />
+                                                </label>
+                                            </div>
+                                            <div class="input_box">
+                                                <label calss="lbl_in" id="label_pw" for="pw"></label>
+                                                <input name="pw" title="password" clas="int" id="pw" type="password" maxlength="16" placeholder="password" />
+                                            </div>
+                                        </div>
+                                        <span class="btn_login">
+                                            <input title="LOGIN" type="submit" value="Login" />
+                                        </span>
+                                        <p class="btn_lnk">
+                                            <a class="btn_join" href="" target="_blank">Join</a>
+                                            <a class="btn_id" href="">
+                                                ID
+                                                <span class="blind">Search</span>
+                                            </a>
+                                            /
+                                            <a href="" target="_blank">Search Password</a>
+                                        </p>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <script src="" type="txt/javascript"></script>
+                            <script type="text/javascript">var useWideLoginboxFlash = true;</script>
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <form name="sform" id="sform" action="" method="get">
+                        <fieldset>
+                            <legend class="blind">SEARCH</legend>
+                            <select name="where" title="search area" class="blind" id="where">
+                                <option selected="selected" value="nexearch">all search</option>
+                                </search>
+                                <span calss="search_window">
+                                    <input name="query" tabindex="1" title="search" class="input_text" id="query" accesskey="" style="" onclick="" type="text" maxlength="" placeholder="Search" />
+                                </span>
+                                <button tabindex="3" title="search" class="sch_smit" id="search_btn" onmouseover="this.className='sch_smit over'" onmouseout="this.className='sch_smit'" onmousedown="this.className='sch_smit down'" onclick="" type="submit">
+                                    <span class="blind">SEARCH</span>
+                                    <span class="ico_search_submit"></span>
+                                </button>
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="birthday_in_this_month">
+                    <div class="section_birthday" data-code-"birthday"=data-code-"birthday" text-align="horizontal">
+                        <h3 class="blind">BIRTHDAY</h3>
+                        <div class="area_header_birthday">
+                            <div class="birthday_info">
+                                <a class="hi_date" href="https://calendar.naver.com" data-clk="squ.date">
+                                    <span class="hi_dnum">August</span>
+                                    <span class="hi_day"> 2nd Birthday</span>
+                                </a>
+                            </div>
+                            <div class="header_paging_navi">
+                                <b class="hp_curr">1</b>
+                                /
+                                <span class="hp_total">3</span>
+                            </div>
+                            <div class="header_btns">
+                                <a class="header_btn_prev" href="#" data-clk="squ.pre">
+                                    <i class="ico_btn_prev" aria-hidden="true"></i>
+                                    <span class="blind">prev</span>
+                                </a>
+                                <a class="header_btn_next" href="#" data-clk="squ.next">
+                                    <i class="ico_btn_next" aria-hidden="true"></i>
+                                    <span class="blind">next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="facebook">
+                    <a class="facebook" href="https://www.facebook.com.kwtalk/?fref=ts">Facebook</a>
+                </div>
+            </div>
 
-		<div class="column_right">
-			<div class="section_photo">
-				<iframe name="iframe_photo" width="740" height="100%" title="photo_zone" src="https://nv.veta.naver.com/fxshow?su=SU10079&nrefreshx=0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-veta-preview="main_time"></iframe>
-				<!-- GALLERY.html -->
-			</div>
-			<div class="section_notice">
-				<iframe width="740" height="300" title="notice_zone" class="iframe_notice" src="https://notice.k-net.com/" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-				<!-- NOTICE.html -->
-			</div>
-			<div class="section_fun_and_issue">
-				<iframe width="370" height="300" title="fun_issue_zone" class="iframe_fun_issue" src="https://funissue.k-net.com/" frameborder="0" marginwidth="0" marginheight="0"
-				scrolling="no"></iframe>
-				<!-- FUN&ISSUE.html -->
-			</div>
-			<div class="section_q_and_a">
-				<iframe width="370" height="300" title="question_answer_zone" class="iframe_question_answer" src="https://qanda.k-net.com/" frameborder="0" marginwidth="0" marginheight="0"
-				scrolling="no"></iframe>
-				<!-- Q&A.html -->
-			</div>
-			<div class="section_gallery">
-				<iframe width="740" height="300" title="gallery_zone" class="iframe_gallery" src="https://gallery.k-net.com/" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-				<!-- GALLERY.html -->
-			</div>
-		</div>
+            <div class="column_right">
+                <div class="section_photo">
+                    <iframe name="iframe_photo" width="740" height="100%" title="photo_zone" src="https://nv.veta.naver.com/fxshow?su=SU10079&nrefreshx=0" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" data-veta-preview="main_time"></iframe>
+                    <!-- GALLERY.html -->
+                </div>
+                <div class="section_notice">
+                    <iframe width="740" height="300" title="notice_zone" class="iframe_notice" src="https://notice.k-net.com/" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                    <!-- NOTICE.html -->
+                </div>
+                <div class="section_fun_and_issue">
+                    <iframe width="370" height="300" title="fun_issue_zone" class="iframe_fun_issue" src="https://funissue.k-net.com/" frameborder="0" marginwidth="0" marginheight="0"
+                            scrolling="no"></iframe>
+                    <!-- FUN&ISSUE.html -->
+                </div>
+                <div class="section_q_and_a">
+                    <iframe width="370" height="300" title="question_answer_zone" class="iframe_question_answer" src="https://qanda.k-net.com/" frameborder="0" marginwidth="0" marginheight="0"
+                            scrolling="no"></iframe>
+                    <!-- Q&A.html -->
+                </div>
+                <div class="section_gallery">
+                    <iframe width="740" height="300" title="gallery_zone" class="iframe_gallery" src="https://gallery.k-net.com/" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                    <!-- GALLERY.html -->
+                </div>
+            </div>
 
-		<div class="column_bottom" role="contentinfo">
-			<div class="footer">
-				<div>
-					<div class="area_terms">
-						<h3 class="blind">K-NET's policy and terms</h3>
-						<ul class="at_1">
-							<li class="at_item">
-								<span class="at_bar"></span>
-								<a href="" data-clk="plc.service">terms--</a>
-							</li>
-							<li class="at_item">
-								<span class="at_bar"></span>
-								<a href="" data-clk="plc.privacy">privacy</a>
-							</li>
-						</ul>
-						<address class="at_cr">
-							ⓒ
-							<a class="at_ca" href="http://www.knetcorp.com/" target="_blank" data-clk="plc.nhn">K-NET Corp.</a>
-						</address>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+        </div>
+        <div class="column_bottom" role="contentinfo">
+            <div class="footer">
+                <div>
+                    <div class="area_terms">
+                        <h3 class="blind">K-NET's policy and terms</h3>
+                        <ul class="at_1">
+                            <li class="at_item">
+                                <span class="at_bar"></span>
+                                <a href="" data-clk="plc.service">terms--</a>
+                            </li>
+                            <li class="at_item">
+                                <span class="at_bar"></span>
+                                <a href="" data-clk="plc.privacy">privacy</a>
+                            </li>
+                        </ul>
+                        <address class="at_cr">
+                            ⓒ
+                            <a class="at_ca" href="http://www.knetcorp.com/" target="_blank" data-clk="plc.nhn">K-NET Corp.</a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
