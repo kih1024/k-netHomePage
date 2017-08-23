@@ -11,7 +11,7 @@
 
     
     <script>
-        window.onpopstate = popState;
+        window.onpopstate = popState; 
         var state = { currneturl : "main.html #Intructions" };
         $(document).ready(function () {
             $("#Show1").click(function () {
@@ -24,7 +24,7 @@
             });
             $("#Show3").click(function () {
                 history.pushState(state, "", "");
-                $("#Intructions").load("HtmlSamplePage.html");
+                $("#Intructions").load("layout.html");
             });
             $("#Show4").click(function () {
                 history.pushState(state, "", "");
@@ -114,7 +114,7 @@
         <div class="header" role="banner">
             <div class="area_logo">
                 <h1>
-                    <a href="/" data-clk="top.logo">
+                    <a href="main.html" data-clk="top.logo">
                         <span class="knet_logo">K-NET logo</span>
                     </a>
                 </h1>
