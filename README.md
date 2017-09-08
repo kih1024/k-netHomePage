@@ -49,3 +49,9 @@
 - 게시판 글쓰기 기능 Get!! Feat.다음 Open Source
 - DB스키마 모델링 및 Test
 - NAS에 PHP 설치 및 구동 확인
+
+## 2017-09-08
+- DB연동 제외 게시글 전송 및 View 완료
+- DB ER-Diagram 최종 결정완료
+- DB이용하여 로그인, 게시글 페이지 테스트
+- 메인 화면 UI에 해당하는 CSS, HTML 제작 시작
