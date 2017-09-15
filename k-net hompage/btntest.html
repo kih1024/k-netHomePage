@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p>Click the button to make a BUTTON element with text.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+
+<script>
+function myFunction() {
+	var area = document.createElement("DIV");
+	var uid = document.createTextNode("NAME");
+	var tarea = document.createElement("INPUT");
+    var btn1 = document.createElement("BUTTON");
+    var t1 = document.createTextNode("댓글");
+	var btn2 = document.createElement("BUTTON");
+    var t2 = document.createTextNode("취소");
+	area.style.border = "2px solid black";
+	area.style.color = "red";
+	area.appendChild(uid);
+	area.appendChild(tarea);
+	btn2.appendChild(t2);
+    btn1.appendChild(t1);
+	area.appendChild(btn1);
+	area.appendChild(btn2);
+	
+    document.body.appendChild(area);
+}
+</script>
+
+</body>
+</html>
