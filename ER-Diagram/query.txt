@@ -3,7 +3,7 @@ create databases knetDb
 create table AUTHORITYS (authority_type varchar(3) not null,authority_num int primary key);
 create table USERS (id varchar(15) primary key, passwd varchar(255) not null, gisu int,username varchar(20) not null,realname varchar(10) not null,email varchar(40),phone_number varchar(12),student_id int,authority_num int not null);
 create table POSTS_TYPE (post_type VARCHAR(20) not null,post_num INT primary key,read_authority varchar(3) not null,write_authority varchar(3) not null);
-create table POSTS (id int primary key,title varchar(45) not null,type int not null,userid varchar(15) not null,post_date DATE not null,exist_data BOOL not null);
+create table POSTS (id int primary key,title varchar(45) not null,type int not null,userid varchar(15) not null,post_date DATE_TIME not null,exist_data BOOL not null);
 create table POST_DATAES(post_id int,dataname varchar(255),post_data BLOB not null,primary key(post_id,dataname));
 create table COMMENTS(id int primary key,post_id int not null, parent_id int not null,username varchar(45) not null,comment_date varchar(45) not null,content varchar(255) not null);
 
@@ -19,38 +19,49 @@ INSERT INTO AUTHORITYS VALUES
 ('비회원', 1),
 ('정회원', 2),
 ('관리자', 3);
-INSERT INTO POSTS_TYPE VALUES
-('Notice', 10, 3, 1),
-('Quest_answer', 20, 1, 1),
-('Seminar', 21, 2, 1),
-('Project', 22, 1, 1),
-('Pedigree', 23, 2, 2),
-('Fun_issue', 30, 1, 1),
-('Anonymous', 31, 1, 1),
-('Gallery', 40, 3, 1);
 INSERT INTO USERS VALUES
 ('ad1', '123456', 20, 'nick_0', '실명_0', 'e-mail0', '01000000000', '2017726000', 3, '2017-09-11'),
 ('id1', '234567', 20, '닉_1', '실명_1', 'e-mail1', '01011111111', '2017726001', 1, '2017-09-21'),
 ('id2', '345678', 21, 'nick_2', '실명_2', 'e-mail2', NULL, '2013726000', 2, '2017-10-11'),
 ('id3', '456789', 21, '닉_3', '실명_3', 'e-mail3', '01033333333', '2017722000', 1, '2016-09-11'),
 ('id4', '567890', 22, 'nick_4', '실명_4', NULL, NULL, '2013722001', 2, '2016-10-11');
-INSERT INTO POSTS VALUES
-(1, '제목_1', 10, 'ad1', '2017-09-11', false),
-(2, '제목_2', 10, 'ad1', '2016-09-11', false),
-(3, '제목_3', 20, 'id1', '2017-10-11', false),
-(10, '제목_4', 21, 'id3', '2017-09-21', false),
-(12, '제목_5', 30, 'id3', '2017-10-22', false);
-INSERT INTO COMMENTS VALUES
+
+INSERT INTO POST_NOTICE VALUES
+(1, '공지_1', 'ad1', '2017-09-11 12:11:12', false, 0, 3, 1),
+(2, '공지_2', 'ad1', '2016-09-11 12:21:12', false, 1, 3, 1),
+(3, '공지_3', 'id1', '2017-10-11 11:11:12', false, 2, 3, 1),
+(10, '공지_4', 'id3', '2017-09-21 13:11:12', false, 0, 3, 1),
+(12, '공지_5', 'id3', '2017-10-22 02:11:12', false, 2, 3, 1);
+
+INSERT INTO NOTICE_COMMENTS VALUES
 (1, 1, 0, 'nick_0', '2017-09-11', '첫번째 댓글'),
 (2, 1, 1, 'nick_2', '2017-09-11', '첫번째 댓글의 댓글'),
 (3, 1, 0, '닉_1', '2017-09-12', '두번째 댓글'),
 (4, 2, 0, '닉_3', '2017-09-12', '첫번째 댓글'),
-(5, 2, 4, '닉_1', '2017-09-12', '첫번째 댓글의 댓글'),
-(6, 2, 5, 'nick_2', '2017-09-13', '두번째 댓글'),
-(7, 1, 3, 'nick_0', '2017-09-13', '두번째 댓글의 댓글');
-INSERT INTO POST_DATAES VALUES
-(1, 'Houston'),
-(4, 'Stafford'),
-(5, 'Bellaire'),
-(5, 'Sugarland'),
-(5, 'Houston');
+(6, 2, 4, '닉_1', '2017-09-12', '첫번째 댓글의 댓글'),
+(7, 2, 5, 'nick_2', '2017-09-13', '두번째 댓글'),
+(8, 1, 3, 'nick_0', '2017-09-13', '두번째 댓글의 댓글');
+
+INSERT INTO SEMINAR_INFOR VALUES
+(1, 2017, 1, 'C언어'),
+(2, 2017, 1, 'JAVA'),
+(3, 2017, 2, 'C++');
+
+INSERT INTO SEMINAR_USER_INFOR VALUES
+('ad1', 1, true),
+('ad1', 2, false),
+('id1', 2, true),
+('id2', 1, false),
+('id2', 2, false),
+('id2', 3, false);
+
+INSERT INTO POST_SEMINAR VALUES
+(1, '세미나_1', 'ad1', '2017-09-11 12:11:12', false, 0, 1),
+(2, '세미나_2', 'ad1', '2016-09-11 12:21:12', false, 1, 2),
+(3, '세미나_3', 'id1', '2017-10-11 11:11:12', false, 2, 1),
+(9, '세미나_4', 'id3', '2017-09-21 13:11:12', false, 0, 2),
+(12, '세미나_5', 'id3', '2017-10-22 02:11:12', false, 2, 3);
+
+
+//not use below Query
+//INSERT INTO POST_DATAES VALUES

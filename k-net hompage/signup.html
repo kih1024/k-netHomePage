@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>회원가입</title>
-		<script src="./jquery.js"></script>
+		<script src="/js_module/jquery.js"></script>
 	</head>
 	<body class="">
 		<div class="container" role="singup">
@@ -23,7 +23,7 @@
 								<a class="an_a home" href="#" data-clk="svc.home" id="Show2">
 									<span class="an_icon"></span>
 									<span class="an_text">K-NET</span>
-                                </a> 
+                                </a>
 							</li>
 							<div class="an_bar"></div>
 							<li class="an_item">
@@ -75,10 +75,10 @@
 						</h1>
 					</div>
 				</div>
-			</div>	
+			</div>
 		<form class="form-horizontal">
-			<form id="join_form" method="post" action="/user2/join.nhn?m=check" onsubmit="return mainSubmit(0);">		
-	<input type="hidden" id="birthday" name="birthday" value="">		
+			<form id="join_form" method="post" action="/user2/join.nhn?m=check" onsubmit="return mainSubmit(0);">
+	<input type="hidden" id="birthday" name="birthday" value="">
 	<input type="hidden" id="token_sjoin" name="token_sjoin" value="fHllbYLjNrshbpP0">
 	<input type="hidden" id="joinMode" name="joinMode" value="unreal">
 	<input type="hidden" id="pbirthday" name="pbirthday" value="">
@@ -98,28 +98,28 @@
     <input type="hidden" id="nid_ev2_old" name="nid_ev2_old" value="">
     <input type="hidden" id="nid_kb2" name="nid_kb2" value="">
 
-				<fieldset class="join_from">						
-					<legend class="blind">회원가입</legend>	
+				<fieldset class="join_from">
+					<legend class="blind">회원가입</legend>
 					<div class="row_group">
 						<div id="idDiv" class="join_row">
 							<span class="ps_box int_id">
-								<input type="text" id="id" name="id" value="" maxlength="20" autocomplete="off"  placeholder="아이디" class="int"> 
-							</span> 
+								<input type="text" id="id" name="id" value="" maxlength="20" autocomplete="off"  placeholder="아이디" class="int">
+							</span>
 							<!-- class:error e_info, error, error gm -->
 							<div id="idMsg" class="error" style="display:none">필수 정보입니다.</div>
-						</div>						
+						</div>
 						<div id="pswd1Div" class="join_row">
-							<!-- [D]normal상태 int_pass / 1단계 사용불가 int_pass_step1 / 2단계 낮음 int_pass_step2 / 3단계 적정 int_pass_step3 / 4단계 높음 int_pass_step4 -->							
+							<!-- [D]normal상태 int_pass / 1단계 사용불가 int_pass_step1 / 2단계 낮음 int_pass_step2 / 3단계 적정 int_pass_step3 / 4단계 높음 int_pass_step4 -->
 							<span id="pswd1Img" class="ps_box int_pass">
-								<input type="password" id="pswd1" name="pswd1" maxlength="20"  placeholder="비밀번호" class="int"> 
-							</span>							
+								<input type="password" id="pswd1" name="pswd1" maxlength="20"  placeholder="비밀번호" class="int">
+							</span>
 							<div id="pswd1Msg" class="error" style="display:none">필수 정보입니다.</div>
 						</div>
 						<div id="pswd2Div" class="join_row">
-							<!-- [D]normal상태 int_pass_check / 비밀번호 확인완료 int_pass_check2  -->							
+							<!-- [D]normal상태 int_pass_check / 비밀번호 확인완료 int_pass_check2  -->
 							<span id="pswd2Img" class="ps_box int_pass_check">
-								<input type="password" id="pswd2" name="pswd2" maxlength="20"   placeholder="비밀번호 재확인" class="int"> 
-							</span> 
+								<input type="password" id="pswd2" name="pswd2" maxlength="20"   placeholder="비밀번호 재확인" class="int">
+							</span>
 							<div id="pswd2Msg" class="error" style="display:none">필수 정보입니다.</div>
 						</div>
 					</div>
@@ -127,10 +127,10 @@
 					<div class="row_group">
 						<div id="nmDiv" class="join_row">
 							<span class="ps_box">
-								<input type="text" id="nm" name="nm" maxlength="40" value="" placeholder="이름" class="int"> 
+								<input type="text" id="nm" name="nm" maxlength="40" value="" placeholder="이름" class="int">
 							</span>
 							<div id="nmMsg" class="error" style="display:none">필수 정보입니다.</div>
-						</div>						
+						</div>
 						<div id="sexDiv" class="join_row join_sex">
 							<span class="row_title blind"> 성별 </span>
 							<span class="sex">
@@ -145,13 +145,13 @@
 							</span>
 							<span id="sexMsg" class="error" style="display:none">필수 정보입니다.</span>
 						</div>
-						
+
 						<div id="birthdayDiv" class="join_row join_birthday">
 							<div class="join_birth">
 								<div class="bir_title"><span>생일</span></div>
 								<div class="bir_yy">
 									<span class="ps_box">
-										<input type="text" id="yy" maxlength="4" value=""  placeholder="년(4자)" class="int">  
+										<input type="text" id="yy" maxlength="4" value=""  placeholder="년(4자)" class="int">
 									</span>
 								</div>
 								<div class="bir_mm">
@@ -175,7 +175,7 @@
 								</div>
 								<div class=" bir_dd">
 									<span class="ps_box">
-										<input type="text" id="dd" maxlength="2" value="" placeholder="일" class="int"> 
+										<input type="text" id="dd" maxlength="2" value="" placeholder="일" class="int">
 									</span>
 								</div>
 							</div>
@@ -183,12 +183,12 @@
 						</div>
 						<div id="phonDiv">
 							<span>
-								<input type="text" id="phone" name="phone" maxlength="12" value="" placeholder="핸드폰 번호" class="int"> 
+								<input type="text" id="phone" name="phone" maxlength="12" value="" placeholder="핸드폰 번호" class="int">
 							</span>
 						</div>
 						<div id="emailDiv" class="join_row join_email">
 							<span class="ps_box int_email">
-								<input type="text" id="email" name="email" maxlength="100" value="" placeholder="본인확인 이메일(선택)" class="int"> 
+								<input type="text" id="email" name="email" maxlength="100" value="" placeholder="본인확인 이메일(선택)" class="int">
 							</span>
 							<div id="emailMsg" class="error" style="display:none">필수 정보입니다.</div>
 						</div>
@@ -227,15 +227,15 @@
 						</div>
 						<div>
 							<span>
-								<input type="text" id="studentID" name="studentID" maxlength="12" value="" placeholder="학번" class="int"> 
+								<input type="text" id="studentID" name="studentID" maxlength="12" value="" placeholder="학번" class="int">
 							</span>
 						</div>
 					</div>
 				</fieldset>
 
-					<a name="bottom"></a>					
-					<div class="error_ch"><span id="joinMsg" class="error" style="display:none">가입정보를 확인해주세요.</span></div>		
-					<span class="btn_join"><input type="submit"  title="회원가입" alt="회원가입" value="가입하기" class="int_join"></span>		
+					<a name="bottom"></a>
+					<div class="error_ch"><span id="joinMsg" class="error" style="display:none">가입정보를 확인해주세요.</span></div>
+					<span class="btn_join"><input type="submit"  title="회원가입" alt="회원가입" value="가입하기" class="int_join"></span>
 			</form>
 		</form>
 	</body>

@@ -1,5 +1,8 @@
 ﻿# k-netHomePage
 
+## 명명
+- css내부 name, id명명에는 소문자 이용, 띄어쓰기는 '_'사용
+
 ## 추후 진행 예정
 - K-Net 로고 작업
 - Flow chart 생성하여 페이지간 연동방식 구체화 (www.draw.io 이용)

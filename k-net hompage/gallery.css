@@ -1,4 +1,4 @@
-﻿body { 
+﻿body {
   background-color: #b5a789;
   font-family:      Georgia, "Times New Roman", Times, serif;
   font-size:        small;
@@ -114,7 +114,7 @@ section#main {
 	padding: 5px 20px 5px 20px;
 }
 .sub_photo li img{
-	width:240px; 
+	width:240px;
 	height:200px;
 	margin-bottom:3px;
 	margin-left:5px;
@@ -130,14 +130,14 @@ section#main {
 	text-align:center;
 }
 /*각게시판 페이징 */
-.paginate { 
+.paginate {
 	padding:16px 0 0;
 	text-align:center;
 }
 
 .paginate a,.paginate strong{
 	margin-right:1px;
-	padding: 2px 4px 3px; 
+	padding: 2px 4px 3px;
 	border: 1px; solid #f5f2ed;
 	color: #666;
 	font-family: Verdana;
@@ -146,7 +146,7 @@ section#main {
 	line-height: normal;
 	text-decoration;none;
 }
-	
+
 
 footer {
   background-color: #675c47;
