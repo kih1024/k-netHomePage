@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+body{font-family: "돋움", dotum , sans-serif; font-size: 12px; color:#000; line-height: 100%;}
+li{list-style: none;}
+a{color:#000; text-decoration: none;}
+#header{width:600px; margin:0 auto; padding-top:20px; border-bottom: 4px solid red;}
+#header>#gnb{height:44px; position: relative;}
+#header>#gnb>li{width:120px; float:left; text-align: center;}
+#header>#gnb>li>a{padding-bottom:8px; font-weight: bold; display: block;}
+#header>#gnb>li>ul{position: absolute; left:0; top:20px; border:1px solid #ccc; background: #fff; display: none;}
+#header>#gnb li.ml>ul{left:0;}
+#header>#gnb li.m2>ul{left:100px;}
+#header>#gnb li.m3>ul{left:240px;}
+#header>#gnb li.m4>ul{left:350px;}
+#header>#gnb li.m5>ul{left:440px;}
+#header>#gnb>li>ul.on{display: block;}
+#header>#gnb>li>ul>li{float:left; padding:5px 8px;}
+#header>#gnb>li>ul>li>a:hover,#header>#gnb>li>ul>li>a:active,#header>#gnb>li>ul>li>a:focus{color:#ff0000;}
