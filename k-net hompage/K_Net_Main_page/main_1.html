@@ -6,27 +6,44 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Welcome to K-net</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="main_1.css">
+	<script src="./jquery.js"></script>
+	<script src="./gnb.js"></script>
 </head>
 
 <body class="">
 	<div class="container" role="main_page">
 
-
+		<nav>
 		<div class="top">
 
+		
 			<!--K-NET LOGO-->
 			<div class="logo">
-				<a href="/" data-clk="logo">
+				<a href="main_1.html" data-clk="logo">
 					K-NET logo
 					<img src="/"/>
 				</a>
 			</div>
 
+
+			<!--TOP LOGIN-->
+			<ul class="top_login">
+				<li>
+					<a class="top_login_picture" href="/login">
+						<img src="top_login_picture.png"/>
+					</a>
+				</li>
+				<li>
+					<a class="top_login_btn" href="/login">로그인</a>
+				</li>
+			</ul>
+
+
 			<!--MENU-->
 			<ul class="menu">
 				<li class="home">
-					<a href="/">홈</a>
+					<a href="main_1.html">홈</a>
 				</li>
 				<li class="knet">
 					<a href="/knet">케이넷</a>
@@ -44,31 +61,21 @@
 				<li>
 					<a href="/materials">자료실</a>
 					<ul>
+						<li class="QandA"><a href="/QandA">Q&A</a></li>
 						<li class="seminar"><a href="/seminar">세미나</a></li>
 						<li class="project"><a href="/project">프로젝트</a></li>
-						<li class="QandA"><a href="/QandA">Q&A</a></li>
 					</ul>
 				</li>
 			</ul>
 
-			<!--TOP LOGIN-->
-			<ul id="top_login">
-				<li>
-					<a class="top_login_picture" href="/login">
-						<img src="/"/>
-					</a>
-				</li>
-				<li>
-					<a class="top_login_btn" href="/login">로그인</a>
-				</li>
-			</ul>
-
+		
 		</div>
+		</nav>
 
 		<!--MAIN_PHOTO-->
 		<div class="jungle">
-			<div class="picture"/>
-			<img src="/"/>
+			<img src="main_photo_3.png"/>
+
 		</div>
 
 
@@ -80,7 +87,29 @@
 				<div class="mid_login">
 					<div>
 
-						<form name="id" id="id" method="post">
+						<form action="/user/login" method="post">
+
+							<p class="input">
+								<input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
+							</p>
+							<p class="input">
+								<input class="text" type="text" name="password" maxlength="20" placeholder="비밀번호"/>
+							</p>
+							<input type="hidden" name="redirect" value="/"/>
+							<p class="submit">
+								<input class="text" type="submit" value="로그인"/>
+							</p>
+							<label class="autologin">
+								<input type="checkbox" name="autologin" value="1"/>로그인 유지
+							</label>
+							<p class="find">
+								<a href="/find">
+								아이디/비밀번호 찾기</a>
+							</p>
+							<p class="register">
+								<a href="/register">회원가입</a>
+							</p>
+
 
 						</form>
 					</div>
