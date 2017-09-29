@@ -58,7 +58,7 @@
 						<li class="anonymous"><a href="/anonymous">익명게시판</a></li>
 					</ul>
 				</li>
-				<li class="materials">
+				<li>
 					<a href="/materials">자료실</a>
 					<ul>
 						<li class="QandA"><a href="/QandA">Q&A</a></li>

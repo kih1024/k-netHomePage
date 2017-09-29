@@ -12,7 +12,6 @@
             $("#Show3").click(function () {
                 history.pushState(state, "", "");
                 $("#Intructions").load("HtmlSamplePage.html");
-				
             });
             $("#Show4").click(function () {
                 history.pushState(state, "", "");
