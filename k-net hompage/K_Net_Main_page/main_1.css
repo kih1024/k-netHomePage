@@ -45,7 +45,7 @@ li{list-style: none;}
 
 .container{
 	margin: 0 auto;
-	width: 100%;
+	width: 956px;
 	height: 100%;
 	zoom: 1;
 }
@@ -63,7 +63,7 @@ nav{
 .top{
 	margin: 0 auto;
 	left: 25px;
-	width: 100%;
+	width: 956px;
 	height: 100px;
 	background-color: #ffffff;
 	border-bottom: 1px solid #d6d6d6;
@@ -130,7 +130,7 @@ nav{
 }
 
 .top_login{
-	position: absolute;
+	position: relative;
 	right: 0px;
 	margin-right: 25px;
 	margin-top: 0px;
@@ -228,7 +228,9 @@ nav{
 	padding: 5px 8px;
 }
 
-.menu > li > ul > li > a:hover,.menu > li > ul > li > a:active,.menu > li > ul > li > a:focus{
+.menu > li > a:hover,
+.menu > li > ul > li > a:hover,
+.menu > li > ul > li > a:active,.menu > li > ul > li > a:focus{
 	color:#ff0000;
 }
 
@@ -275,19 +277,25 @@ a{
 /*mid*/
 
 .left{
-	margin-left: 150px;
 	margin-top: 25px;
-	padding-top: 25px;
+	float: left;
 	width: 320px;
 	height: 100%;
 	background-color: #fff;
 
-
 }
 
 .mid_login{
-	width: 200px;
-	padding-left: 30px;
+	padding: 10px;
 	background-color: #f6f6f6;
 	border: 1px solid #d6d6d6;
+}
+
+
+.right{
+	margin-top: 25px;
+	float: left;
+	width: 636px;
+	height: 100%;
+	background-color: #fff;
 }
