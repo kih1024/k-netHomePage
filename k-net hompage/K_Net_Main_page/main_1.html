@@ -20,8 +20,8 @@
 			<!--K-NET LOGO-->
 			<div class="logo">
 				<a href="main_1.html" data-clk="logo">
-					K-NET logo
-					<img src="/"/>
+					<!--K-NET logo-->
+					<img src="K-Net Logo.gif"/>
 				</a>
 			</div>
 
@@ -29,12 +29,13 @@
 			<!--TOP LOGIN-->
 			<ul class="top_login">
 				<li>
+					<a class="top_login_btn" href="/login">로그인</a>
+					
+				</li>
+				<li>
 					<a class="top_login_picture" href="/login">
 						<img src="top_login_picture.png"/>
 					</a>
-				</li>
-				<li>
-					<a class="top_login_btn" href="/login">로그인</a>
 				</li>
 			</ul>
 
@@ -57,7 +58,7 @@
 						<li class="anonymous" id="show5"><a href="/anonymous">익명게시판</a></li>
 					</ul>
 				</li>
-				<li class="materials"">
+				<li class="materials">
 					<a href="/materials">자료실</a>
 					<ul>
 						<li class="QandA" id="show6"><a href="/QandA">Q&A</a></li>
@@ -85,58 +86,54 @@
 				<!--LOGIN-->
 				<div class="mid_login">
 					<div>
+						<iframe width="200" height="120" tabindex="2" title="로그인" class="loginform" src="" frameborder="0"scrolling="no">
+							<form name="loginform" action="/user/login" method="post" autocomplete="off">
+					
+								<p class="input">
+									<input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
+								</p>
+								<p class="input">
+									<input class="text" type="text" name="password" maxlength="20" placeholder="비밀번호"/>
+								</p>
 
-						<form action="/user/login" method="post">
+								<button tabindex-"3" class="mid_login_btn" onclick="" type="submit"></button>
+							
 
-							<p class="input">
-								<input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
-							</p>
-							<p class="input">
-								<input class="text" type="text" name="password" maxlength="20" placeholder="비밀번호"/>
-							</p>
-							<input type="hidden" name="redirect" value="/"/>
-							<p class="submit">
-								<input class="text" type="submit" value="로그인"/>
-							</p>
-							<label class="autologin">
-								<input type="checkbox" name="autologin" value="1"/>로그인 유지
-							</label>
-							<p class="find">
-								<a href="/find">
-								아이디/비밀번호 찾기</a>
-							</p>
-							<p class="register">
-								<a href="/register">회원가입</a>
-							</p>
+								<input type="hidden" name="redirect" value="/"/>
+								<label class="autologin">
+									<input type="checkbox" name="autologin" value="1"/>로그인 유지
+								</label>
+								<p class="find">
+									<a href="/find">
+									아이디/비밀번호 찾기</a>
+								</p>
+								<p class="register">
+									<a href="/register">회원가입</a>
+								</p>
 
 
-						</form>
+							</form>
+						</iframe>
 					</div>
-
 				</div>
 
 				<!--SEARCH-->
 				<div class="search">
 					<form name="search" id="search" method="get">
-
+						<input class="searching" type="text" placeholder="검색해보삼"/>
 					</form>
-
 				</div>
 
 				<!--BIRTHDAY-->
 				<div class="birthday">
 					<div>
-						<h3>Birthday</h3>
+						<!--<h4>Birthday</h4>-->
+						<img src="birthday.gif"/>
 					</div>
-
-				</div>
-
-				<!--FACEBOOK-->
-				<div class="facebook">
-					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkwtalk&tabs=timeline&width=320&height=777&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="800" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 				</div>
 
 			</div>
+
 
 
 			<div class="right">
@@ -147,7 +144,7 @@
 				</div>
 
 				<!--MAIN_FREEBOARD-->
-				<div class="main_freeborad">
+				<div class="main_free">
 
 				</div>
 
@@ -163,7 +160,14 @@
 
 			</div>
 
+
+			<!--FACEBOOK-->
+			<div class="facebook">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkwtalk&tabs=timeline&width=320&height=777&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="678" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+
 		</div>
+
 
 
 		<div class="bottom">

@@ -14,6 +14,7 @@ head{
 body{
 	margin: 0px;
 	padding: 0px;
+	width: ;
 }
 
 div{
@@ -45,7 +46,7 @@ li{list-style: none;}
 
 .container{
 	margin: 0 auto;
-	width: 956px;
+	width: 100%;
 	height: 100%;
 	zoom: 1;
 }
@@ -58,99 +59,125 @@ nav{
 	width: 100%;
 	height: 100px;
 	display: block;
+	border-bottom: 1px solid #d6d6d6;
+	background-color: #fff;
 }
 
 .top{
 	margin: 0 auto;
 	left: 25px;
-	width: 956px;
+	width: 1250px;
 	height: 100px;
 	background-color: #ffffff;
-	border-bottom: 1px solid #d6d6d6;
 }
 
 .jungle{
+	position: relative;
 	width: 100%;
+	min-width: 1280px;
 	height: 250px;
 	float: left;
-	margin-top: 100px;
 	position: relative;
-	background-color: #d6d6d6;
+	background-color: #e5e6ea;
+	margin: 100px auto auto auto;
 }
 
 .jungle img{
 	width:100%;
-	height: 200px;
+	height: 250px;
 }
 
+@media only screen and (min-width: 641px){
+	position: relative;
+	margin: 0 auto 25px auto;
+	width: 1280px;
+}
 .mid{
+	position: relative;
 	width: 100%;
 	float: left;
-	background-color: #fff;
-	position: relative;
+	background-color: #e5e6ea;
+
+	/*padding-left: 110px;
+	padding-right: 110px;*/
 }
 
 .bottom{
-	width: 100%;
-	height: 50px;
-	float: left;
 	position: relative;
+	width: 100%;
+	min-width: 1280px;
+	clear: both;
 	text-align: left;
-	background-color: #B5B2FF;
+	background-color: #fff;
+	border-top: 1px solid #d6d6d6;
+	margin: 0 auto;
 }
 
 .logo{
 	position: relative;
-	margin-left: 25px;
+	margin-left: auto;
+	margin-top: 5px;
 	float: left;
-	height: 100%;
+	width: 250px;
+	height: 95px;
 	background-color: #fff;
 	list-style: none;
 	z-index: 101;
-	margin-right: 30px;
+	margin-right: auto;
 }
-
+/*
 .logo a{
 	float: left;
 	display: block;
-	margin: 20px 15px 20px 0;
+	margin: 20px 15px 20px 0;file:///C:/Users/CHAE%20YOU%20LIM/Desktop/k-netHomePage/k-net%20hompage/K_Net_Main_page/main_photo_3.png
 	width: 40px;
 	height: 40px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
+}*/
+
+.logo img{
+	width: 100%;
+	height: 100%;
 }
 
 .menu{
 	position: relative;
 	padding-top: 30px;
 	margin: 0 auto;
-	width: 600px;
-	height: 40px;
+	width: 650px;
+	height: 50px;
 	background-color: #fff;
 }
 
 .top_login{
 	position: relative;
-	right: 0px;
-	margin-right: 25px;
-	margin-top: 0px;
+	right: 50px;
+	margin-right: 5px;
+	margin-top: 25px;
 	float: right;
-	height: 100px;
+	width: 110px;
 	text-align: center;
-	background-color: #fff;
 	list-style: none;
 }
 
 .top_login_picture img{
 	width: 50px;
 	height: 50px;
-	border-radius: 5;
+	float: right;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
 }
 
 .top_login_btn{
+	margin-top: 15px;
+	margin-left: 10px;
 	text-decoration: none;
+	float: right;
 	font-size: 15px;
-	font-weight: bold;
+	color: #5D5D5D;
+	border: 1px solid #d6d6d6;
+	border-radius: 3px;
 }
 
 /*.top{
@@ -194,9 +221,10 @@ nav{
 	position: absolute;
 	left: 0;
 	top: 55px;
-	border: 1px solid #ccc;
+	font-weight: bold;
 	background: #fff;
 	display: none;
+	font-size: 13px;
 }
 
 .menu > li.home > ul{
@@ -212,11 +240,13 @@ nav{
 }
 
 .menu > li.community > ul{
-	left: 350px;
+	margin-top: 3px;
+	left: 340px;
 }
 
 .menu > li.materials > ul{
-	left: 400px;
+	margin-top: 3px;
+	left: 466px;
 }
 
 .menu > li > ul.on{
@@ -231,7 +261,8 @@ nav{
 .menu > li > a:hover,
 .menu > li > ul > li > a:hover,
 .menu > li > ul > li > a:active,.menu > li > ul > li > a:focus{
-	color:#ff0000;
+	color:#000;
+	border-bottom: 3px solid #f63b3a;
 }
 
 /*.menu > li.active{
@@ -277,25 +308,111 @@ a{
 /*mid*/
 
 .left{
-	margin-top: 25px;
+	position: absolute;
 	float: left;
-	width: 320px;
-	height: 100%;
-	background-color: #fff;
+	left: 90px;
+	width: 200px;
+	height: 500px;
+	background-color: #e5e6ea;
+	margin-top: 13px;
+}
 
+.right{
+	position: absolute;
+	float: left;
+	left: 290px;
+	width: 640px;
+	height: 100%;
+	margin-top: 3px;
+	background-color: #e5e6ea;
 }
 
 .mid_login{
 	padding: 10px;
-	background-color: #f6f6f6;
+	background-color: #fff;
 	border: 1px solid #d6d6d6;
+	margin-bottom: 10px;
+
+}
+
+.text{ 	
+	font-size: 14px; 
+	padding: 5px;
+	width: 120px;
+	height: 20px;
+}
+
+.mid_login_btn{
+
+}
+
+.searching{
+	width: 100%;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px solid #d6d6d6;
+	background-color: #fff;
+	font-size: 14px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+/*.birthday{
+	border: 0.5px solid #d6d6d6;
+}*/
+
+.birthday img{
+	width: 101%;
+}
+
+.facebook{
+	position: relative;
+	float: left;
+	left: 923px;
+	right: 100px;
+	margin-right: auto;
+	margin-top: 13px;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 7px;
 }
 
 
-.right{
-	margin-top: 25px;
-	float: left;
-	width: 636px;
-	height: 100%;
+.main_notice{
+	width:610px;
+	height: 149px;
 	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-left: 10px ;
+	margin-right:10px;
+	margin-top:10px;
+}
+.main_free{
+	width:299px;
+	height:209px;
+	margin:10px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	float:left;
+}
+.main_QandA{
+	width:299px;
+	height:209px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	float:left;
+}
+
+.main_gallery{
+	width:610px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	clear:both;
 }
