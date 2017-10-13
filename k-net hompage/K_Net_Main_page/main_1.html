@@ -83,20 +83,102 @@
 
 			<div class="left">
 
+
 				<!--LOGIN-->
-				<div class="mid_login">
-					<div>
-						<iframe width="200" height="120" tabindex="2" title="로그인" class="loginform" src="" frameborder="0"scrolling="no">
-							<form name="loginform" action="/user/login" method="post" autocomplete="off">
+				
+
+				
+            	<div class="mid_login">
+
+                <!-- Logout div start -->
+         
+              	<div>
+                <form name="logoutform" action="/logout" method="get" autocomplete="off">
+                <!-- show id information-->
+                    <p class="show_information">
+                        <label class="lb" id="id_information" >
+                        	<img  src="top_login_picture.png"/>
+                        </label>   
+                    </p>
+
+                    <button tabindex-"3" class="mid_logout_btn" type="submit">Logout</button>
+                  
+                            
+                </form>
+                </div>
+                <!-- Logout div end -->
+
+          
+                <!-- Login div start -->
+                <!--<div>
+                <form name="loginform" action="/login" method="post" autocomplete="off">
+                    <p class="input">
+                        <input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
+                    </p>
+                    <p class="input">
+                        <input class="text" type="password" name="password" maxlength="20" placeholder="비밀번호"/>
+                    </p>
+
+                    <button tabindex-"3" class="mid_login_btn" type="submit">Login</button>
+                  
+                    <input type="hidden" name="redirect" value="/"/>
+                    	<label class="autologin">
+                      		<input type="checkbox" name="autologin" value="1"/>로그인 유지
+                    	</label>
+                    <p class="find">
+                        <a href="/find">
+                        아이디/비밀번호 찾기</a>
+                    </p>
+                    <p class="register">
+                        <a href="/register">회원가입</a>
+                    </p>
+                </form>
+                </div>-->
+                <!-- Login div end -->
+        
+           		</div>
+
+
+
+
+					<!--유림이가 만든 mid_login.html
+					<div class="loginbox">
 					
-								<p class="input">
-									<input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
-								</p>
+							<form class="login" name="loginform" action="/user/login" method="post" onsubmit="returnlayoutLogCheck(this);" autocomplete="off">
+	
+									<input type="hidden" name="id" value="home"/>
+									<input type="hidden" name="pw" value="login"/>
+
+									<div class="idbox">
+										<input type="text" name="id" vlue class="input1 id" title="아이디">
+									</div>
+
+									<div class="PWbox">
+										<input type="text" name="PW" value class="input1 PW" title="패스워드">
+									</div>
+
+									<div class="login_btn_box">
+										<input type="submit" class="login_submit">
+									</div>
+
+									<div class="clear"></div>
+
+							</form>
+
+							<div class="join">
+								<a href="/join" data-fancybox-type="iframe" class="memberjoin">회원가입</a>
+								<span>│</span>
+								<a href="/findaccount" class="find" data-fancybox-type="iframe">아이디/패스워드찾기</a>
+							</div>
+					
+					</div>
+
 								<p class="input">
 									<input class="text" type="text" name="password" maxlength="20" placeholder="비밀번호"/>
 								</p>
-
-								<button tabindex-"3" class="mid_login_btn" onclick="" type="submit"></button>
+								<p class="mid_login_submit">
+								<button tabindex-"3" class="mid_login_btn" onclick="" type="submit">로그인</button>
+								</p>
 							
 
 								<input type="hidden" name="redirect" value="/"/>
@@ -111,11 +193,12 @@
 									<a href="/register">회원가입</a>
 								</p>
 
-
+								</fieldset>
 							</form>
-						</iframe>
+					
 					</div>
-				</div>
+				</div>유림이가 만든 mid_login.html-->
+
 
 				<!--SEARCH-->
 				<div class="search">
@@ -140,7 +223,17 @@
 
 				<!--MAIN_NOTICE-->
 				<div class="main_notice">
-
+					<div class="main_notice_title"> &nbsp 공지사항 </div>
+					<div class="main_notice_board1">
+						<div> &nbsp 홈페이지 </div>
+						<div> &nbsp 홈페이지 </div>
+						<div> &nbsp 홈페이지 </div>
+					</div> <!--board1-->
+					<div class="main_notice_board2">
+						<div> &nbsp 홈페이지 </div>
+						<div> &nbsp 홈페이지 </div>
+						<div> &nbsp 홈페이지 </div>
+					</div> <!--board2-->
 				</div>
 
 				<!--MAIN_FREEBOARD-->
@@ -161,12 +254,12 @@
 			</div>
 
 
-			<!--FACEBOOK-->
+			<!--FACEBOOK
 			<div class="facebook">
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkwtalk&tabs=timeline&width=320&height=777&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="678" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 			</div>
 
-		</div>
+		</div>-->
 
 
 

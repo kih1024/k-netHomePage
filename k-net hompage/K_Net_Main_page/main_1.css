@@ -11,14 +11,18 @@ head{
 	position: relative;
 }
 
+@media only screen and (min-width: 0px){
 body{
 	margin: 0px;
 	padding: 0px;
-	width: ;
+	width: 100%;
+	background-color: #e5e6ea; 
+}
 }
 
 div{
 	display: block;
+	outline: 0;
 }
 /*C:\Users\CHAE YOU LIM\Desktop\k-netHomePage\k-net homepage\K_Net_Main_page\*/
 /*오버워치 폰트 적용하고싶어!!!!*/
@@ -77,7 +81,6 @@ nav{
 	min-width: 1280px;
 	height: 250px;
 	float: left;
-	position: relative;
 	background-color: #e5e6ea;
 	margin: 100px auto auto auto;
 }
@@ -87,30 +90,29 @@ nav{
 	height: 250px;
 }
 
-@media only screen and (min-width: 641px){
-	position: relative;
-	margin: 0 auto 25px auto;
-	width: 1280px;
-}
+
+@media only screen and (min-width: 0px){
 .mid{
 	position: relative;
 	width: 100%;
+	height: 750px;
 	float: left;
 	background-color: #e5e6ea;
 
-	/*padding-left: 110px;
-	padding-right: 110px;*/
+}
 }
 
 .bottom{
 	position: relative;
+	top: 750px;
+	float: left;
 	width: 100%;
 	min-width: 1280px;
-	clear: both;
+	height: 100px;
 	text-align: left;
 	background-color: #fff;
-	border-top: 1px solid #d6d6d6;
-	margin: 0 auto;
+	border-top: 1px solid #f1f3f6;
+	margin: 0 auto 25px auto;
 }
 
 .logo{
@@ -309,48 +311,137 @@ a{
 
 .left{
 	position: absolute;
-	float: left;
-	left: 90px;
+	left: 18.3%;
 	width: 200px;
 	height: 500px;
 	background-color: #e5e6ea;
-	margin-top: 13px;
+	margin-top: 20px;
+	margin-left: 13px;
 }
 
 .right{
 	position: absolute;
-	float: left;
-	left: 290px;
+	left: 18%;
+	/*left: 440px;*/
 	width: 640px;
 	height: 100%;
-	margin-top: 3px;
+	margin-top: 10px;
 	background-color: #e5e6ea;
+	margin-left: 218px;
 }
 
 .mid_login{
-	padding: 10px;
+	width: 100%;
 	background-color: #fff;
 	border: 1px solid #d6d6d6;
 	margin-bottom: 10px;
-
+	text-align: center;
 }
 
-.text{ 	
-	font-size: 14px; 
-	padding: 5px;
-	width: 120px;
-	height: 20px;
+.lb img{
+	margin: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
 }
 
-.mid_login_btn{
-
+form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font: inherit;
+	display: inline;
 }
+
+
+/*.loginbox{
+	position: relative;
+	padding: 10px 15px 0 15px;
+}
+
+form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	outline: 0;
+	display: inline;
+}
+
+input[type="hidden" i]{
+	-webkit-appearance: initial;
+	background-color: initial;
+	padding: initial;
+	border: initial;
+	display: none;
+}
+
+user agent stylesheet input[type="submit" i]{
+	align-items: flex-start;
+	cursor: default;
+	box-sizing: border-box;
+}
+
+.left .mid_login .input1{
+	border: none;
+	height: 26px;
+	line-height: 26px;
+	font-size: 13px;
+	width: 104px;
+	border-bottom: 1px solid #bbb;
+	padding-left: 20px;
+	background: no-repeat;
+}
+
+.left .mid_login .id{
+	background-position: 0 0;
+}
+
+.left .mid_login .pw{
+	background-position: 0 -26px;
+}
+
+.login_btn_box{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.login_submit{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f0f0f0;
+	font-size: 12px;
+	color: #888;
+	text-shadow: 1px 1px 0px #fff;
+	width: 52px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+}
+
+.clear{
+	clear: both;
+}
+
+.join{
+	padding: 10px;
+	text-align: center;
+	font-size: 11px;
+	margin-top: 5px;
+}*/
+
+
+
 
 .searching{
-	width: 100%;
+	width: 200px;
 	height: 30px;
 	box-sizing: border-box;
-	border: 1px solid #d6d6d6;
+	border: 2px solid #d6d6d6;
 	background-color: #fff;
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -362,10 +453,11 @@ a{
 }*/
 
 .birthday img{
-	width: 101%;
+	border: 0px solid #d6d6d6;
+	width: 200px;
 }
 
-.facebook{
+/*.facebook{
 	position: relative;
 	float: left;
 	left: 923px;
@@ -374,7 +466,7 @@ a{
 	margin-top: 13px;
 	border: 1px solid #d6d6d6;
 	margin-bottom: 7px;
-}
+}*/
 
 
 .main_notice{
