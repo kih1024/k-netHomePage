@@ -4,7 +4,8 @@
 </head>
 <body>
 
-<p>Click the button to make a BUTTON element with text.</p>
+<p onclick="test(event)">Click the button to make a BUTTON element with text.</p>
+
 
 <button onclick="myFunction()">Try it</button>
 
@@ -28,6 +29,18 @@ function myFunction() {
 	area.appendChild(btn2);
 	
     document.body.appendChild(area);
+}
+function test(event){
+	var x = event.clientX;
+	var y = event.clientY;
+	var selObj = window.getSelection();
+	var btn = document.createElement("BUTTON");
+	var txt = "X : "+x+" , Y : "+y;
+	var t=document.createTextNode(txt);
+	btn.appendChild(t);
+	btn.onclick="myFunction()";
+	document.body.appendChild(btn);
+	
 }
 </script>
 

@@ -1,1 +1,0 @@
-window.testValue2 = 200;

@@ -1,0 +1,2 @@
+@include configuration
+@include changelog
