@@ -1,0 +1,563 @@
+@charset "utf-8";
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *  /  common  /  * * * * * * * * * * * * * * * * * * * * * * * * */
+
+* { margin: 0; padding: 0; }
+body,div,nav,article,h1,h2,h3,h4,ol,ul,li,dl,dt,dd,p,span,form,th,td,input,textarea,select,pre,address { 
+	color: #666; font-family: "맑은 고딕", 돋움, tahoma; _font-family: 돋움, tahoma; font-size: 12px; letter-spacing: -1px; }
+body { background-color: #f8f8f8; }
+body.selectDisabled { -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; user-select: none; }
+img { border: 0; }
+div,nav,article,figure { display: block; }
+dl,ul,ol,menu,li { list-style:none; }
+img,input,select,textarea { vertical-align: middle; }
+a { color: #666; text-decoration: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+em { font-style: normal; font-weight: bold; }
+em.underline { font-style: normal; font-weight: normal; text-decoration: underline; }
+address { font-style: normal; }
+label.forinsert { display: none; }
+input[type="button"],input[type="submit"],input[type="search"] {
+	-webkit-appearance: none;
+}
+
+.bold { font-weight: bold !important; }
+.floatLeft { float: left !important; }
+.floatRight { float: right !important; }
+.clearBoth { clear: both !important; }
+.clearBothOnly { clear: both !important; margin: 0 !important; padding: 0 !important; height: 0 !important; }
+.left { text-align: left !important; }
+.right { text-align: right !important; }
+.center { text-align: center !important; }
+.pointer { cursor: pointer !important; }
+.hide { display: none !important; }
+.show { display: block !important; }
+.modal { display: none; position: fixed; z-index: 1000; left: 50%; top: 50%; background-color: #fff; }
+.modalwrap { position: fixed; z-index: 999; left: 0; top: 0; width: 100%; height: 100%; background-color: #000; opacity: .5; filter: alpha(opacity=50); }
+.modalwrap.lighter { opacity: .2; filter: alpha(opacity=20); }
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *  /  container  /  * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#container hr {
+	clear: both; height: 0; border: 0;
+}
+
+#container {
+	margin: 80px auto 0 auto; width: 1180px; box-sizing: border-box;
+}
+#container.about, #container.calculator, #container.faq, #container.lecturefirst, #container.moim, #container.my, #container.page {
+	padding: 25px;
+}
+#container.article,
+#container.community {
+	position: relative; margin: 0 auto 25px auto;
+}
+#container.friend, #container.lecturepoint {
+	padding: 25px 0; width: 780px;
+}
+#container.lecturenext {
+	position: relative; padding: 25px 0; width: 780px;
+}
+#container.lectureview {
+	padding: 25px; width: 1180px;
+}
+#container.search {
+	position: relative; margin: 0 auto; padding: 25px 0; width: 780px;
+}
+#container.timetable {
+	position: relative; padding: 15px; width: 100%; overflow: auto;
+}
+body.appwebview #container {
+	margin: 0 auto;
+}
+#container > div.wrap {
+	float: none; position: relative; left: 25px; margin-top: 25px; width: 780px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *  /  article  /  * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#writeArticleButton {
+	display: block; margin-bottom: 5px; padding: 0 10px; height: 50px; line-height: 46px; border: 2px solid #d6d6d6; box-sizing: border-box; cursor: text;
+	color: #a6a6a6; font-size: 14px; background: #f9f9f9 url('container.write.background.png') no-repeat right center; background-size: 40px 40px;
+}
+#container > div.title {
+	margin-bottom: -20px; padding: 15px; border: 1px solid #d6d6d6; box-sizing: border-box;
+}
+#container > div.title > h1 > a {
+	color: #292929; font-size: 22px; font-weight: bold;
+}
+#container > div.title > p.description {
+	color: #737373; font-size: 12px;
+}
+#container > div.title > ol.buttons {
+	float: right; background-color: #fff;
+}
+#container > div.title > ol.buttons > li {
+	float: left; margin-left: 5px;
+}
+#container > div.title > ol.buttons > li > a {
+	display: inline-block; padding: 0 10px; height: 25px; line-height: 25px; border: 1px solid #d6d6d6; border-radius: 3px;
+	color: #737373; font-size: 13px; font-weight: bold; cursor: pointer;
+}
+#container > div.articles > form.write {
+	position: relative; margin-bottom: 5px; border: 2px solid #d6d6d6; box-sizing: border-box;
+}
+#container form.write.dragover:after {
+	content: '첨부할 이미지를 끌어다 놓으세요.'; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+	line-height: 160px; color: #fff; font-size: 16px; font-weight: bold; text-align: center; background-color: rgba(0, 0, 0, 0.5);
+}
+#container > div.articles > form.write *:focus {
+	outline: none;
+}
+#container > div.articles > form.write p {
+	padding: 15px; border-bottom: 1px solid #e3e3e3; background-color: #fff;
+}
+#container > div.articles > form.write input.title {
+	width: 100%; height: 20px; line-height: 20px; border: 0;
+	color: #292929; font-size: 16px; font-weight: bold;
+}
+#container > div.articles > form.write textarea {
+	width: 100%; height: 90px; border: 0;
+	color: #292929; font-size: 14px; resize: none;
+}
+#container > div.articles > form.write textarea.large {
+	height: 350px;
+}
+#container > div.articles > form.write textarea.smallplaceholder::placeholder {
+	font-size: 12px;
+}
+#container > div.articles > form.write textarea.smallplaceholder::-webkit-input-placeholder {
+	font-size: 12px;
+}
+#container > div.articles > form.write ul.hashtags {
+	margin-bottom: 5px; padding: 10px 10px 0px 10px; border-bottom: 1px solid #e3e3e3;
+}
+#container > div.articles > form.write ul.hashtags:before {
+	content: '추천#'; display: inline-block; float: left; margin-right: 10px;
+	color: #a6a6a6; font-size: 12px; font-weight: bold;
+}
+#container > div.articles > form.write ul.hashtags > li {
+	float: left; margin: 0 10px 10px 0; cursor: pointer;
+	color: #737373; font-size: 12px;
+}
+#container > div.articles > form.write input.file {
+	position: absolute; width: 0; height: 0; overflow: hidden; opacity: 0;
+}
+#container > div.articles > form.write ol.thumbnails {
+	display: none; padding: 16px 12px 12px 16px; border-bottom: 1px solid #e3e3e3;
+}
+#container > div.articles > form.write ol.thumbnails > li {
+	display: inline-block; margin: 0 4px 4px 0; width: 85px; height: 85px; border: 1px solid #d6d6d6; cursor: pointer;
+}
+#container > div.articles > form.write ol.thumbnails > li.thumbnail.loading {
+	background: transparent url('/images/loading.svg') no-repeat center center; background-size: 24px 24px;
+}
+#container > div.articles > form.write ol.thumbnails > li.thumbnail.attached {
+	background-size: cover;
+}
+#container > div.articles > form.write ol.thumbnails > li.new {
+	background: transparent url('/images/new/container.articles.write.thumbnails.new.png') no-repeat center center; background-size: 24px 24px;
+}
+#container > div.articles > form.write ul.option li {
+	width: 40px; height: 40px; background-repeat: no-repeat; background-position: center center; background-size: 40px 40px; cursor: pointer;
+}
+#container > div.articles > form.write ul.option li.hashtag {
+	float: left; background-image: url('/images/new/container.articles.write.hashtag.png');
+}
+#container > div.articles > form.write ul.option li.attach {
+	float: left; background-image: url('/images/new/container.articles.write.attach.png');
+}
+#container > div.articles > form.write ul.option li.attach.active {
+	background-image: url('/images/new/container.articles.write.attach.active.png');
+}
+#container > div.articles > form.write ul.option li.attach label {
+	display: block !important; width: 100%; height: 100%; cursor: pointer;
+}
+#container > div.articles > form.write ul.option li.attach label.loading {
+	background: transparent url('/images/container.write.attach.loading.gif') no-repeat center center;
+}
+#container > div.articles > form.write ul.option li.anonym {
+	float: right; margin-right: 15px; background-image: url('container.articles.write.anonym.png');
+}
+#container > div.articles > form.write ul.option li.anonym.active {
+	background-image: url('container.articles.write.anonym.active.png');
+}
+#container > div.articles > form.write ul.option li.submit {
+	float: right; background-color: #db6153; background-image: url('container.articles.write.submit.png');
+}
+#container > div.articles > form.write ul.option div.attachedfile {
+	position: absolute; margin-top: 40px; margin-left: 40px; padding: 5px 10px;
+	color: #fff; font-size: 13px; letter-spacing: 0; background-color: #db6153;
+}
+#container > div.articles > form.write ul.option div.attachedfile:after {
+	content: ''; display: block; position: absolute; left: 10px; top: -6px; border-width: 0 6px 6px; border-style: solid; border-color: #db6153 transparent; width: 0;
+}
+#container > div.articles > form.write ul.option div.attachedfile span.delete {
+	margin-left: 10px; color: #fff; font-size: 12px; cursor: pointer;
+}
+#container > div.articles form.attach {
+	position: absolute; width: 0; height: 0; overflow: hidden;
+}
+#container > div.articles > ul.hashtags {
+	margin-bottom: 5px; padding: 15px 15px 10px 15px; border: 1px solid #e3e3e3; background-color: #fff;
+}
+#container > div.articles > ul.hashtags:before {
+	content: '추천#'; display: inline-block; float: left; width: 40px; line-height: 25px;
+	color: #db6153; font-size: 12px; font-weight: bold;
+}
+#container > div.articles > ul.hashtags > li {
+	float: left; margin: 0 5px 5px 0;
+}
+#container > div.articles > ul.hashtags > li > a {
+	display: block; padding: 0 5px; height: 25px; line-height: 25px; border-radius: 3px;
+	color: #737373; font-size: 14px; background-color: #f2f2f2;
+}
+#container > div.articles > ul.hashtags > li > a:hover {
+	color: #0ca5af;
+}
+#container > div.articles > div.notice {
+	margin-bottom: -1px; border: 1px solid #e3e3e3;
+}
+#container > div.articles > div.notice > a {
+	display: block; height: 50px; line-height: 50px; padding: 0 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+	color: #292929; font-size: 14px; background-color: #fff;
+}
+#container > div.articles > div.notice > a:hover {
+	background-color: #fbfbfb;
+}
+#container > div.articles > div.notice > a:before {
+	content: '공지'; display: inline-block; width: 40px;
+	color: #db6153; font-size: 12px; font-weight: bold;
+}
+#container > div.articles > article {
+	margin-bottom: -1px; box-sizing: border-box; border: 1px solid #e3e3e3; background-color: #fff;
+}
+#container > div.articles > article.noticearticle {
+	margin-bottom: 5px; border-color: #db6153;
+}
+#container > div.articles > article.dialog {
+	padding: 80px 0; color: #737373; font-size: 15px; text-align: center;
+}
+#container > div.articles > article > a.article {
+	display: block; padding: 15px;
+}
+#container > div.articles > article > a.article[href]:hover {
+	background-color: #fbfbfb;
+}
+#container > div.articles > article img.picture {
+	float: left;
+}
+#container > div.articles > article img.picture.medium {
+	margin: 0 5px 5px 0; width: 20px; height: 20px;
+}
+#container > div.articles > article img.picture.large {
+	margin: 0 10px 15px 0; width: 40px; height: 40px;
+}
+#container > div.articles > article div.profile {
+	float: left; margin-bottom: 15px; height: 40px;
+}
+#container > div.articles > article h3 {
+	color: #292929; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+#container > div.articles > article h3.admin {
+	color: #db6153;
+}
+#container > div.articles > article h3.organization {
+	color: #3b5a99;
+}
+#container > div.articles > article h3.creator {
+	color: #8776be;
+}
+#container > div.articles > article h3.writer {
+	color: #0ca5af;
+}
+#container > div.articles > article h3.disabled {
+	color: #a6a6a6;
+}
+#container > div.articles > article h3.small {
+	float: left; max-width: 90px; height: 15px; line-height: 15px; font-size: 11px; font-weight: normal; letter-spacing: 0;
+}
+#container > div.articles > article h3.medium {
+	float: left; max-width: 90px; margin: 0 10px 5px 0; height: 20px; line-height: 20px; font-size: 12px; font-weight: bold;
+}
+#container > div.articles > article h3.large {
+	height: 20px; max-width: 200px; line-height: 20px; font-size: 14px; font-weight: bold;
+}
+#container > div.articles > article time {
+	color: #a6a6a6; letter-spacing: 0;
+}
+#container > div.articles > article time.small {
+	float: left; margin-right: 5px; height: 15px; line-height: 15px; font-size: 11px;
+}
+#container > div.articles > article time.medium {
+	float: left; margin-bottom: 5px; height: 20px; line-height: 20px; font-size: 12px;
+}
+#container > div.articles > article time.large {
+	height: 20px; line-height: 20px; font-size: 12px;
+}
+#container > div.articles > article h2 {
+	color: #292929;
+}
+#container > div.articles > article h2.medium {
+	margin-bottom: 5px; line-height: 18px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 14px; font-weight: normal;
+}
+#container > div.articles > article h2.large {
+	margin-bottom: 15px; font-size: 22px; font-weight: bold;
+}
+#container > div.articles > article p {
+	word-break: break-all;
+}
+#container > div.articles > article p.small {
+	margin-bottom: 5px; max-height: 30px; line-height: 15px; white-space: normal; overflow: hidden; color: #a6a6a6; font-size: 12px;
+}
+#container > div.articles > article p.medium {
+	margin-bottom: 5px; max-height: 100px; line-height: 20px; white-space: normal; overflow: hidden; color: #4c4c4c; font-size: 14px;
+}
+#container > div.articles > article p.large {
+	padding-bottom: 15px; line-height: 20px; color: #4c4c4c; font-size: 14px;
+}
+#container > div.articles > article p.small a {
+	color: #a6a6a6;
+}
+#container > div.articles > article p.medium a:hover,
+#container > div.articles > article p.large a:hover {
+	color: #292929;
+}
+#container > div.articles > article p.medium a.hashtag,
+#container > div.articles > article p.large a.hashtag {
+	color: #588d92;
+}
+#container > div.articles > article p.medium a.hashtag:hover,
+#container > div.articles > article p.large a.hashtag:hover {
+	color: #0ca5af;
+}
+#container > div.articles > article div.attachthumbnail {
+	float: right; margin: -5px -5px -5px 15px; width: 80px; height: 80px; background-size: cover;
+}
+#container > div.articles > article div.attaches > figure.attach {
+	position: relative; display: block;
+}
+#container > div.articles > article div.attaches > figure.attach > p.gif {
+	position: absolute; z-index: 1; left: 8px; top: 8px; padding: 0 8px; border-radius: 3px; background-color: #db6153;
+}
+#container > div.articles > article div.attaches > figure.attach > p.gif > * {
+	line-height: 24px; color: #fff; font-size: 14px;
+}
+#container > div.articles > article div.attaches > figure.attach > p.gif > strong {
+	margin-right: 4px;
+}
+#container > div.articles > article div.attaches > figure.attach > img {
+	box-sizing: border-box; cursor: pointer;
+}
+#container > div.articles > article div.attaches.full > figure.attach {
+	margin-top: 15px;
+}
+#container > div.articles > article div.attaches.full > figure.attach > img {
+	max-width: 100%; height: auto; border: 1px solid #e3e3e3;
+}
+#container > div.articles > article div.attaches.full > figure.attach > figcaption {
+	margin-top: 2px; padding: 10px; border: 1px solid #f2f2f2; line-height: 18px;
+	color: #4c4c4c; font-size: 14px; word-wrap: break-word; background-color: #fff;
+}
+#container > div.articles > article div.attaches.multiple {
+	margin: 0 -15px -15px -15px; padding: 15px 10px 10px 15px;
+}
+#container > div.articles > article div.attaches.multiple > figure.attach {
+	display: inline-block; margin: 0 5px 5px 0; width: 183px; height: 183px;
+}
+#container > div.articles > article div.attaches.multiple > figure.attach > img {
+	width: 100%; height: 100%; object-fit: cover;
+}
+#container > div.articles > article span.more {
+	margin-right: 10px; line-height: 15px; color: #0ca5af; font-size: 12px; letter-spacing: 0;
+}
+#container > div.articles > article a.boardname {
+	line-height: 15px; color: #a6a6a6; font-size: 12px;
+}
+#container > div.articles > article ul.status {
+	float: right;
+}
+#container > div.articles > article hr {
+	clear: both; height: 0; border: 0;
+}
+#container > div.articles > article ul.status li {
+	float: left; margin-left: 10px; padding-left: 15px; height: 15px; line-height: 15px;
+	color: #a6a6a6; font-size: 12px; background-repeat: no-repeat; background-position: left center; background-size: 12px 12px; cursor: pointer;
+}
+#container > div.articles > article ul.status li.attach {
+	color: #737373; background-image: url('container.articles.attach.png');
+}
+#container > div.articles > article ul.status li.vote {
+	color: #db6153; background-image: url('container.articles.vote.png');
+}
+#container > div.articles > article ul.status li.comment {
+	color: #0ca5af; background-image: url('container.articles.comment.png');
+}
+#container > div.articles > article ul.status li.scrap {
+	color: #ffcc1c; background-image: url('container.articles.scrap.png');
+}
+#container > div.articles > article > div.comments {
+	display: none;
+}
+#container > div.articles > article > div.comments article {
+	margin: 0; border: 0; background-color: #fff;
+}
+#container > div.articles > article > div.comments article.parent {
+	padding: 15px 15px 0 15px; border-top: 1px solid #e3e3e3;
+}
+#container > div.articles > article > div.comments article.child {
+	margin: -5px 4px 4px 35px; padding: 10px 10px 0 10px; border: 1px solid #e3e3e3; background-color: #f9f9f9;
+}
+#container > div.articles > article form.writecomment {
+	position: relative; border-top: 1px solid #e3e3e3; background-color: #f8f8f8;
+}
+#container > div.articles > article form.writecomment.child {
+	margin: 0 4px 4px 35px; border: 1px solid #e3e3e3;
+}
+#container > div.articles > article form.writecomment *:focus {
+	outline: none;
+}
+#container > div.articles > article form.writecomment input.text {
+	margin: 0; padding: 10px 85px 10px 10px; border: 0; width: 100%; height: 40px; line-height: 20px; box-sizing: border-box;
+	color: #262626; font-size: 13px; overflow: hidden; resize: none; background-color: transparent;
+}
+#container > div.articles > article form.writecomment ul.option {
+	position: absolute; right: 0; top: 0; height: 40px; font-size: 0;
+}
+#container > div.articles > article form.writecomment ul.option li {
+	display: inline-block; width: 40px; height: 40px; background-repeat: no-repeat; background-position: center center; background-size: 40px 40px; cursor: pointer;
+}
+#container > div.articles > article form.writecomment ul.option li.anonym {
+	margin-right: 5px; background-image: url('container.articles.write.anonym.png');
+}
+#container > div.articles > article form.writecomment ul.option li.anonym.active {
+	background-image: url('container.articles.write.anonym.active.png');
+}
+#container > div.articles > article form.writecomment ul.option li.submit {
+	background-color: #db6153; background-image: url('container.articles.write.submit.png');
+}
+#container > div.articles > div.pagination > a {
+	display: block; margin-top: 5px; margin-left: 5px; padding: 0 10px 0 25px; height: 35px; line-height: 35px; border: 1px solid #db6153; border-radius: 3px;
+	color: #db6153; font-size: 14px; font-weight: bold; background-repeat: no-repeat; background-position: 10px center; background-size: 10px 10px; cursor: pointer;
+}
+#container > div.articles > div.pagination > a.list {
+	float: left; background-image: url('container.articles.pagination.list.png');
+}
+#container > div.articles > div.pagination > a.first {
+	float: left; background-image: url('container.articles.pagination.first.png');
+}
+#container > div.articles > div.pagination > a.prev {
+	float: left; background-image: url('container.articles.pagination.prev.png');
+}
+#container > div.articles > div.pagination > a.cancel {
+	float: left; background-image: url('container.articles.pagination.prev.png');
+}
+#container > div.articles > div.pagination > a.next {
+	float: right; margin-left: 0; margin-right: 5px; padding: 0 25px 0 10px; background-image: url('container.articles.pagination.next.png'); background-position: right 10px center;
+}
+#container > div.articles > div.pagination > form.search {
+	float: left; margin-top: 5px; margin-left: 5px; padding: 8px 25px 8px 5px; border: 1px solid #a6a6a6; border-radius: 3px;
+	background: transparent url('container.articles.pagination.search.png') no-repeat right 10px center; background-size: 15px 15px;
+}
+#container > div.articles > div.pagination > form.search > *:focus {
+	outline: none;
+}
+#container > div.articles > div.pagination > form.search > select {
+	float: left; margin-right: 5px; height: 19px; line-height: 19px; border: 0;
+	color: #737373; font-size: 12px; background-color: transparent;
+}
+#container > div.articles > div.pagination > form.search > input.text {
+	 height: 19px; line-height: 19px; border: 0; width: 130px;
+	 color: #292929; font-size: 14px; background-color: transparent;
+}
+#container > div.articles > div.loading {
+	padding: 80px 0; color: #a6a6a6; font-size: 18px; text-align: center;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *  /  pc only  /  * * * * * * * * * * * * * * * * * * * * * * * * */
+
+body {
+	background-color: #fff;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *  /  bottom  /  * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#bottom {
+	 text-align: center;
+}
+#bottom ul.links li {
+	display: inline-block; margin: 0 5px;
+}
+#bottom > ul.links > li > a {
+	color: #737373; font-size: 13px;
+}
+#bottom > ul.links > li.copyright > a {
+	font-weight: bold;
+}
+#bottom > ul.links > li > a:hover {
+	color: #db6153;
+}
+#sheet {
+	position: fixed; z-index: 110; left: 0; bottom: 0; width: 100%; box-sizing: border-box; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.75); background-color: #000\9; /* Fix for < IE9 */
+	-webkit-animation: show_sheet 3s ease-out; animation: show_sheet 3s ease-out;
+}
+#sheet.red {
+	background-color: rgba(219, 97, 83, 0.95); background-color: #db6153\9;
+}
+#sheet.blue {
+	background-color: rgba(12, 165, 175, 0.95); background-color: #0ca5af\9;
+}
+#sheet > h3 {
+	line-height: 100%; color: #fff; text-align: center;
+}
+#sheet > p {
+	line-height: 140%; color: rgba(255, 255, 255, 0.8); color: #fff\9; font-size: 14px; text-align: center;
+}
+#sheet > ul.buttons > li > a {
+	display: block; padding: 0 15px; height: 40px; line-height: 40px; border-radius: 3px;
+	font-size: 16px; font-weight: bold; text-align: center; cursor: pointer;
+}
+#sheet > ul.buttons > li.none > a {
+	border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.8); border-color: #fff\9;
+	color: rgba(255, 255, 255, 0.8); color: #fff\9;
+}
+#sheet > ul.buttons > li.highlight > a {
+	color: #292929; background-color: #fff;
+}
+#sheet.red > ul.buttons > li.highlight > a {
+	color: #db6153;
+}
+#sheet.blue > ul.buttons > li.highlight > a {
+	color: #0ca5af;
+}
+#sheet > hr {
+	clear: both; height: 0; border: 0;
+}
+@-webkit-keyframes show_sheet {
+	0% { opacity: 0; -webkit-transform: translateY(300px); }
+	90% { opacity: 0; -webkit-transform: translateY(300px); }
+	100% { opacity: 1; -webkit-transform: translateY(0px); }
+}
+@keyframes show_sheet {
+	0% { opacity: 0; transform: translateY(300px); }
+	90% { opacity: 0; transform: translateY(300px); }
+	100% { opacity: 1; transform: translateY(0px); }
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * *  /  pc only  /  * * * * * * * * * * * * * * * * * * * * * * * * */
+
+#bottom {
+	margin: 0 auto 25px auto; width: 1180px;
+}
+#sheet > h3 {
+	margin: 30px 0 10px 0; font-size: 30px; font-weight: normal;
+}
+#sheet > p {
+	margin-bottom: 30px;
+}
+#sheet > ul.buttons {
+	margin-bottom: 30px; text-align: center;
+}
+#sheet > ul.buttons > li {
+	margin: 0 2px; display: inline-block;
+}
