@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>회원가입</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="signup.css"/>
+	<link rel="stylesheet" type="text/css" href="signup_pc.css"/>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="clickcr.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>
+			<a href="main_1.html" class="h_logo">K-NET</a>
+		</h1>
+	</div>
+	<div id="container">
+		<div id="content">
+			<h2 class="blind">K-net 회원가입</h2>
+			<div class="join_content">
+				<div class="join_form">
+					<form id="join_form" method="post" action="/user2/join.nhn?m=check" onsubmit="return mainSubmit(0);">
+						<input type="hidden" id="birthday" name="birthday" value>
+						<fieldset class="join_form">
+							<legend class="blind">회원가입</legend>
+							<div class="row_group">
+								<div id="idDiv" class="join_row">
+									<span class="ps_box int_id">
+										<input type="text" id="id" name="id" value maxlength="20" autocomplete="off" onfocus="toggleLabel('idLb','id','in');" onblur="toggleLabel('idLb','id','out');checkId('first')" placeholder="아이디" class="int">
+										<!--<label id="idLb" for="id" class="lbl">아이디</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+									<div id="idMsg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+								<div id="pswd1Div" class="join_row">
+									<span id="pswd1Img" class="ps_box int_pass">
+									<input type="password" id="pwsd1" name="pswd1" maxlength="20" onfocus="toggleLabel('pswd1Lb','pswd1','in');" onblur="toggleLabel('pswd1Lb','pswd1','out');checkPswd1('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock(event)" onkeydown="checkShiftDownJoin(event);"" placeholder="비밀번호" class="int">
+										<!--<label id="pswd1Lb" for="pswd1" class="lbl">비밀번호</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+									<div id="pswd1Msg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+								<div id="pswd2Div" class="join_row">
+									<span id="pswd2Img" class="ps_box int_pass_check">
+										<input type="password" id="pswd2" name="pswd2" maxlength="20" onfocus="toggleLabel('pswd2Lb','pswd2','in');" onblur="toggleLabel('pswd2Lb','pswd2','out'); checkPswd2('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock2(event)" ; onkeydown=
+											checkShiftDown(event);" placeholder="비밀번호 재확인" class="int">
+										<!--<label id="pswd2Lb" for="pswd2" clas="lbl">비밀번호 재확인</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+									<div id="pswd2Msg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+							</div>
+							<div class="row_group">
+								<div id="nmDiv" class="join_row">
+									<span class="ps_box">
+										<input type="text" id="nm" name="nm" maxlength="40" value onfocus="toggleLabel('nmLb','nm','in');" onblur="toggleLabel('nmLb','nm','out'); checkName('check')" placeholder="이름" class="int">
+											<!--<label id="nmLb" for="nm" class="lbl">이름</label>-->
+										<button type="button" disabled titile="delete" class="wrg">삭제</button>
+									</span>
+									<div id="nmMsg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+								<div id="sexDiv" class="join_row join_sex">
+									<span class="row_title blind">성별</span>
+									<span class="sex">
+										<span class="jender">
+											<input type="radio" id="man" name="sex" value="0" onclick="checkSex()">
+											<label id="manLb" for="man">남자 </label>
+										</span>
+										<span class="jender">
+											<input type="radio" id="woman" name="sex" value="1" onclick="checkSex()">
+											<label id="womanLb" for="woman">여자</label>
+										</span>
+									</span>
+									<span id="sexMsg" class="error" style="display: none">필수 정보입니다.</span>
+								</div>
+								<div id="birthdayDiv" class="join_row join_birthday">
+									<div class="join_birth">
+										<div class="bir_title">
+											<span>생일</span>
+										</div>
+										<div class="bir_yy">
+											<span class="ps_box">
+												<input type="text" id="yy" maxlength="4" value onfocus="toggleLabel('yyLb','yy','in');"" onblur="toggleLabel('yyLb','yy','out'); checkBirthday('check')" placeholder="년(4자)" class="int">
+												<!--<label id="yyLb" for="yy" class="lbl">년(4자)</label>-->
+												<button type="button" disabled title="delete" class="wrg">삭제</button>
+											</span>
+										</div>
+										<span class="cell"></span>
+										<div class="bir_mm">
+											<span class="ps_box">
+												<select id="mm" title="월" class="sel" onchange="checkBirthday('check')">
+													<option value>월</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+												</select>
+											</span>
+										</div>
+										<span class="cell"></span>
+										<div class="bir_dd">
+											<span class="ps_box">
+												<input type="text" id="dd" maxlength="2" value onfocus="toggleLabel('ddLb','dd','in');"" onblur="toggleLabel('ddLb','dd','out'); checkBirthday('check')" placeholder="일" class="int">
+												<!--<label id="ddLb" for="dd" class="lbl">일</label>-->
+												<button type="button" disabled title="delete" class="wrg">삭제</button>
+											</span>
+										</div>
+									</div>	
+									<span id="birthdayMsg" class="error" style="display: none">필수 정보입니다.</span>
+								</div>
+							</div>	
+							<div class="row_group">
+								<div id="phoneDiv" class="join_row join_phone">
+									<span class="ps_box int_phone">
+										<input type="text" id="phone" name="phone" maxlength="100" value onfocus="toggleLabel('phoneLb','phone','in');"" onblur="toggleLabel('phoneLb','phone','out'); checkEmail('check')" placeholder="본인 전화번호(선택)" class="int">
+										<!--<label id="phoneLb" for="phone" class="lbl">본인 전화번호(선택)</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+									<div id="phoneMsg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+								<div id="emailDiv" class="join_row join_email">
+									<span class="ps_box int_email">
+										<input type="text" id="email" name="email" maxlength="100" value onfocus="toggleLabel('emailLb','email','in');"" onblur="toggleLabel('emailLb','email','out'); checkEmail('check')" placeholder="본인확인 이메일" class="int">
+										<!--<label id="emailLb" for="email" class="lbl">본인확인 이메일</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+								</div>
+								<span id="emailMsg" class="error" style="display: none">필수 정보입니다.</span>
+							</div>
+							<div class="row_group">
+								<div id="infoDiv" class="join_row join_infor">
+									<div class="join_info">
+										<div class="gisu">
+											<span class="ps_box">
+												<select id="gisu" title="기수" class="sel" onchange="checkBirthday('check')">
+													<option value>기수</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+													<option value="6">6</option>
+													<option value="7">7</option>
+													<option value="8">8</option>
+													<option value="9">9</option>
+													<option value="10">10</option>
+													<option value="11">11</option>
+													<option value="12">12</option>
+													<option value="13">13</option>
+									  				<option value="14">14</option>
+										  			<option value="15">15</option>
+									  				<option value="16">16</option>
+										  			<option value="17">17</option>
+									 	 			<option value="18">18</option>
+									  				<option value="19">19</option>
+									  				<option value="20">20</option>
+									  				<option value="21">21</option>
+									  				<option value="22">22</option>
+									  				<option value="23">23</option>
+									  				<option value="24">24</option>
+												</select>
+											</span>
+										</div>
+										<span class="cell"></span>
+										<div class="student_id">
+											<span class="ps_box">
+												<input type="text" id="student_id" maxlength="10" value onfocus="toggleLabel('student_idLb','student_id','in');"" onblur="toggleLabel('student_idLb','student_id','out'); checkBirthday('check')" placeholder="학번" class="int">
+												<!--<label id="student_idLb" for="student_id" class="lbl">학번</label>-->
+												<button type="button" disabled title="delete" class="wrg">삭제</button>
+											</span>
+										</div>
+									</div>
+									<span id="infoMsg" class="error" style="display: none">필수 정보입니다.</span>
+								</div>
+							</div>
+						</fieldset>
+						<a name="bottom"></a>
+						<div class="error_ch">
+							<span id="joinMsg" class="error" style="display: none">가입정보를 확인해주세요.</span>
+						</div>
+						<span class="btn_join">
+							<input type="submit" onclick="clickcr(this,'sup.signup','','', event);" title="회원가입" alt="회원가입" value="가입하기" class="int_join">
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	 checkBrowser();
+
+	 if("Y" == "N"){
+	 	mainSubmit(0);
+	 }
+
+	 var nCaptcha;
+
+	 $(document).ready(function(){
+	 	nCaptcha = new naver.NCapcha(["id"]);
+
+	 	document.getElementById("nid_t2").value = sp.get();
+	 });
+	 </script>
+</div>
+</body>
+</html>
+	
