@@ -1,0 +1,510 @@
+﻿html{
+	overflow-y: scroll;
+	overflow-x: auto;
+}
+
+body,html{
+	height: 100%;
+}
+
+head{
+	position: relative;
+}
+
+@media only screen and (min-width: 0px){
+body{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	background-color: #e5e6ea; 
+}
+}
+
+div{
+	display: block;
+	outline: 0;
+}
+/*C:\Users\CHAE YOU LIM\Desktop\k-netHomePage\k-net homepage\K_Net_Main_page\*/
+/*오버워치 폰트 적용하고싶어!!!!*/
+@font-face{
+	font-family: Georgia, "koverwatch", Times, serif;
+	src: url(koverwatch.ttf);
+}
+
+body, div, nav, ul, li,{
+	color: #666;
+	font-family: "koverwatch.ttf", 돋움, tahoma;
+	font-size: 12px;
+	line-height: 100%;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{color:#000; text-decoration: none;}
+
+li{list-style: none;}
+
+
+.container{
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	zoom: 1;
+}
+
+nav{
+	position: fixed;
+	z-index: 100;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	display: block;
+	border-bottom: 1px solid #d6d6d6;
+	background-color: #fff;
+}
+
+.top{
+	margin: 0 auto;
+	left: 25px;
+	width: 1250px;
+	height: 100px;
+	background-color: #ffffff;
+}
+
+.jungle{
+	position: relative;
+	width: 100%;
+	min-width: 1280px;
+	height: 250px;
+	float: left;
+	background-color: #e5e6ea;
+	margin: 100px auto auto auto;
+}
+
+.jungle img{
+	width:100%;
+	height: 250px;
+}
+
+
+@media only screen and (min-width: 0px){
+.mid{
+	position: relative;
+	width: 100%;
+	height: 750px;
+	float: left;
+	background-color: #e5e6ea;
+
+}
+}
+
+.bottom{
+	position: relative;
+	top: 750px;
+	float: left;
+	width: 100%;
+	min-width: 1280px;
+	height: 100px;
+	text-align: left;
+	background-color: #fff;
+	border-top: 1px solid #f1f3f6;
+	margin: 0 auto 25px auto;
+}
+
+.logo{
+	position: relative;
+	margin-left: auto;
+	margin-top: 5px;
+	float: left;
+	width: 250px;
+	height: 95px;
+	background-color: #fff;
+	list-style: none;
+	z-index: 101;
+	margin-right: auto;
+}
+/*
+.logo a{
+	float: left;
+	display: block;
+	margin: 20px 15px 20px 0;file:///C:/Users/CHAE%20YOU%20LIM/Desktop/k-netHomePage/k-net%20hompage/K_Net_Main_page/main_photo_3.png
+	width: 40px;
+	height: 40px;
+	text-decoration: none;
+	font-size: 15px;
+}*/
+
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+
+.menu{
+	position: relative;
+	padding-top: 30px;
+	margin: 0 auto;
+	width: 650px;
+	height: 50px;
+	background-color: #fff;
+}
+
+.top_login{
+	position: relative;
+	right: 50px;
+	margin-right: 5px;
+	margin-top: 25px;
+	float: right;
+	width: 110px;
+	text-align: center;
+	list-style: none;
+}
+
+.top_login_picture img{
+	width: 50px;
+	height: 50px;
+	float: right;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
+}
+
+.top_login_btn{
+	margin-top: 15px;
+	margin-left: 10px;
+	text-decoration: none;
+	float: right;
+	font-size: 15px;
+	color: #5D5D5D;
+	border: 1px solid #d6d6d6;
+	border-radius: 3px;
+}
+
+/*.top{
+	*zoom: 1;
+}*/
+
+/*.top:after{
+	content: "";
+	display: block;
+	clear: both;
+}*/
+
+
+/*.menu > li{
+	display: inline-block;
+	margin: 0 15px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	float: left;
+	list-style: none;
+}*/
+
+.menu > li{
+	margin-top: 0px;
+	width: 120px;
+	float: left;
+	text-align: center;
+}
+
+.menu > li > a{
+	padding-bottom: 8px;
+	font-weight: bold;
+	display: block;
+}
+
+.menu > li > ul{
+	position: absolute;
+	left: 0;
+	top: 55px;
+	font-weight: bold;
+	background: #fff;
+	display: none;
+	font-size: 13px;
+}
+
+.menu > li.home > ul{
+	left: 0;
+}
+
+.menu > li.knet > ul{
+	left: 100px;
+}
+
+.menu > li.notice > ul{
+	left: 240px;
+}
+
+.menu > li.community > ul{
+	margin-top: 3px;
+	left: 340px;
+}
+
+.menu > li.materials > ul{
+	margin-top: 3px;
+	left: 466px;
+}
+
+.menu > li > ul.on{
+	display: block;
+}
+
+.menu > li > ul > li{
+	float: left;
+	padding: 5px 8px;
+}
+
+.menu > li > a:hover,
+.menu > li > ul > li > a:hover,
+.menu > li > ul > li > a:active,.menu > li > ul > li > a:focus{
+	color:#000;
+	border-bottom: 3px solid #f63b3a;
+}
+
+/*.menu > li.active{
+	color: #6B66FF;
+	border-bottom: 4px solid #6B66FF;
+}
+
+.menu > li > a:hover, .menu > li.active > a{
+	color: #6B66FF;
+}
+
+.menu > li > a{
+	color: #4c4c4c;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+a{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	text-decoration: none;	
+	color: #666;
+
+}*/
+
+/*.menu > li > ul{
+
+	list-style: none;
+	text-align: center;
+	float: left;
+}
+*/
+/*.menu > li > ul > li{
+	display: inline-block;
+	line-height: 95px;
+	text-align: center;
+	margin: 0 10px;
+	height: 95px;
+	font-size: 13px;
+	float: left;
+}*/
+
+
+/*mid*/
+
+.left{
+	position: absolute;
+	left: 18.3%;
+	width: 200px;
+	height: 500px;
+	background-color: #e5e6ea;
+	margin-top: 20px;
+	margin-left: 13px;
+}
+
+.right{
+	position: absolute;
+	left: 18%;
+	/*left: 440px;*/
+	width: 640px;
+	height: 100%;
+	margin-top: 10px;
+	background-color: #e5e6ea;
+	margin-left: 218px;
+}
+
+.mid_login{
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.lb img{
+	margin: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 6px;
+	border: 1px solid #d6d6d6;
+}
+
+form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font: inherit;
+	display: inline;
+}
+
+
+/*.loginbox{
+	position: relative;
+	padding: 10px 15px 0 15px;
+}
+
+form{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	outline: 0;
+	display: inline;
+}
+
+input[type="hidden" i]{
+	-webkit-appearance: initial;
+	background-color: initial;
+	padding: initial;
+	border: initial;
+	display: none;
+}
+
+user agent stylesheet input[type="submit" i]{
+	align-items: flex-start;
+	cursor: default;
+	box-sizing: border-box;
+}
+
+.left .mid_login .input1{
+	border: none;
+	height: 26px;
+	line-height: 26px;
+	font-size: 13px;
+	width: 104px;
+	border-bottom: 1px solid #bbb;
+	padding-left: 20px;
+	background: no-repeat;
+}
+
+.left .mid_login .id{
+	background-position: 0 0;
+}
+
+.left .mid_login .pw{
+	background-position: 0 -26px;
+}
+
+.login_btn_box{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+.login_submit{
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #f0f0f0;
+	font-size: 12px;
+	color: #888;
+	text-shadow: 1px 1px 0px #fff;
+	width: 52px;
+	height: 52px;
+	text-align: center;
+	line-height: 52px;
+}
+
+.clear{
+	clear: both;
+}
+
+.join{
+	padding: 10px;
+	text-align: center;
+	font-size: 11px;
+	margin-top: 5px;
+}*/
+
+
+
+
+.searching{
+	width: 200px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 2px solid #d6d6d6;
+	background-color: #fff;
+	font-size: 14px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+
+/*.birthday{
+	border: 0.5px solid #d6d6d6;
+}*/
+
+.birthday img{
+	border: 0px solid #d6d6d6;
+	width: 200px;
+}
+
+/*.facebook{
+	position: relative;
+	float: left;
+	left: 923px;
+	right: 100px;
+	margin-right: auto;
+	margin-top: 13px;
+	border: 1px solid #d6d6d6;
+	margin-bottom: 7px;
+}*/
+
+
+.main_notice{
+	width:610px;
+	height: 149px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-left: 10px ;
+	margin-right:10px;
+	margin-top:10px;
+}
+.main_free{
+	width:299px;
+	height:209px;
+	margin:10px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	float:left;
+}
+.main_QandA{
+	width:299px;
+	height:209px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-right:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	float:left;
+}
+
+.main_gallery{
+	width:610px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	clear:both;
+}

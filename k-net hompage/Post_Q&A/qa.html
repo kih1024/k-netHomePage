@@ -1,15 +1,18 @@
-﻿
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
+<div style="display: none;">
+	<input name="jindo1502278985252" type="input"/>
+</div>
 <head>
+	<meta charset="utf-8"/>
+	<title>Welcome to K-net</title>
+	<link rel="stylesheet" type="text/css" href="main_1.css">
+	<script src="./jquery.js"></script>
+	<script src="./gnb.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-
-	<title>Editor</title>
-
 	<style>/*!
  * Bootstrap v2.3.0
  *
@@ -29,14 +32,139 @@
  */@-ms-viewport{width:device-width}@media(min-width:1200px){.row{margin-left:-30px}.row:after,.row:before{display:table;line-height:0;content:""}.row:after{clear:both}[class*=span]{float:left;min-height:1px;margin-left:30px}.container,.navbar-fixed-top .container,.span12{width:1170px}.span9{width:870px}.span8{width:770px}.span4{width:370px}.span3{width:270px}input{margin-left:0}}@media(min-width:768px) and (max-width:979px){.row{margin-left:-20px}.row:after,.row:before{display:table;line-height:0;content:""}.row:after{clear:both}[class*=span]{float:left;min-height:1px;margin-left:20px}.container,.navbar-fixed-top .container,.span12{width:724px}.span9{width:538px}.span8{width:476px}.span4{width:228px}.span3{width:166px}input{margin-left:0}}@media(max-width:767px){body{padding-right:20px;padding-left:20px}.navbar-fixed-top{margin-right:-20px;margin-left:-20px}.container{width:auto}.row{margin-left:0}[class*=span]{display:block;float:none;width:100%;margin-left:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.span12{width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}}@media(max-width:480px){.nav-collapse{-webkit-transform:translate3d(0,0,0)}input[type=checkbox]{border:1px solid #ccc}}@media(max-width:979px){body{padding-top:0}.navbar-fixed-top{position:static;margin-bottom:20px}.navbar-fixed-top .navbar-inner{padding:5px}.navbar .container{width:auto;padding:0}.nav-collapse{clear:both}.nav-collapse .nav{float:none;margin:0 0 10px}.nav-collapse .nav>li{float:none}.nav-collapse .nav>li>a{margin-bottom:2px;padding:9px 15px;font-weight:700;color:#777;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.nav-collapse .nav>li>a:focus,.nav-collapse .nav>li>a:hover{background-color:#f2f2f2}.navbar-inverse .nav-collapse .nav>li>a{color:#999}.navbar-inverse .nav-collapse .nav>li>a:focus,.navbar-inverse .nav-collapse .nav>li>a:hover{background-color:#111}.nav-collapse,.nav-collapse.collapse{height:0;overflow:hidden}.navbar .btn-navbar{display:block}}@media(min-width:980px){.nav-collapse.collapse{height:auto!important;overflow:visible!important}}body{padding:54px 0 40px;overflow-y:scroll}body,button,input,select{font:400 14px/1.4em "Segoe UI","Open Sans",Calibri,Candara,Arial,sans-serif}.navbar .nav{float:left;margin-right:0}a{text-decoration:none;color:#06c}h3,h4{letter-spacing:-.01em;margin:0;line-height:normal}h3{font-size:26px}h4{font-size:16px}.alert h1,.alert h2,.alert h3,.alert h4,.alert h5,.alert h6,.alert-heading{color:inherit}.alert-info{color:#3a87ad;background-color:#d9edf7}.navbar-inverse .navbar-inner{background-color:#68217A;filter:none}.navbar-inverse .btn-navbar{background:0 0;margin-top:14px}.navbar-inverse .btn-navbar:active,.navbar-inverse .btn-navbar:focus,.navbar-inverse .btn-navbar:hover{background:#442359}body>section>.container{padding-top:12px}.navbar .nav>li>a{padding-top:18px;font-size:14px;text-transform:uppercase}.navbar-inverse .nav-collapse .nav>li>a{color:#fff;padding-left:0}.navbar-inverse .nav>li>a.nav-item:focus,.navbar-inverse .nav>li>a.nav-item:hover{background-color:rgba(0,0,0,.12)}.navbar .logo{padding:16px 12px 0 0;height:35px;display:block;float:left}.navbar .logo a{color:#fff;font-size:24px;letter-spacing:-1px}#gh-link{display:none;position:fixed;top:0;right:0;border:0;margin:0;z-index:1000}@media (min-width:980px){#gh-link{display:block}.navbar .nav{float:right}.navbar-inverse .nav-collapse .nav>li>a{padding-left:15px}}@media (max-width:979px){body{padding:inherit}.navbar-fixed-top{margin-right:inherit;margin-left:inherit;margin-bottom:0}.navbar-fixed-top .navbar-inner{padding:0 20px}.navbar .container{width:724px}}@media (max-width:767px){.navbar .container{width:100%}}@media (max-width:480px){.navbar .logo a{display:none}}.try .editor.row{padding:18px 0}.try .row h4{padding-bottom:6px}.try .editor.row .control-label{display:inline-block;position:relative;top:-4px;margin-right:4px}.try .editor .editor-frame{position:relative}.try .editor .editor-frame #diff-editor,.try .editor .editor-frame #editor{height:400px;margin-bottom:10px;border:1px solid #eee}.try .editor .editor-frame .loading{position:absolute;height:100%;width:100%;background-color:rgba(255,255,255,.5);margin:0 auto;display:none;z-index:100}.try .editor .editor-frame .progress{width:50%;margin:15% auto 0}.try .editor .editor-frame .progress .bar{width:100%;background-color:#4bb1cf}.try .editor .editor-frame #diff-editor .alert,.try .editor .editor-frame #editor .alert{margin:18% auto 0;width:30%;text-align:center;color:#b94a48;background-color:#f2dede;border-color:#eed3d7}@media (min-width:1200px){.try .editor .row{margin-left:0}}@media (max-width:767px){.try .container{margin:0 24px}.try .editor>.span9 .row .span4{float:left;width:50%}.try .editor h4{margin-top:0}}@media (max-width:520px){.try .editor>.span3 h4,.try .editor>.span3 p{display:none}}@media (max-width:320px){.try .editor>.span9{display:none}}</style>
 	
 	
-	
-
 	<link data-name="vs/editor/editor.main" rel="stylesheet" href="node_modules/monaco-editor/min/vs/editor/editor.main.css">
 </head>
 
-<body>
-	
-	<pre data-preload="index/samples/diff.lhs.txt" style="display:none">
+<body class="">
+	<div class="container" role="main_page">
+
+		<nav>
+		<div class="top">
+		
+			<!--K-NET LOGO-->
+			<div class="logo">
+				<a href="main_1.html" data-clk="logo">
+					<!--K-NET logo-->
+					<img src="K-Net Logo.gif"/>
+				</a>
+			</div>
+
+
+			<!--TOP LOGIN-->
+			<ul class="top_login">
+				<li>
+					<a class="top_login_btn" href="/login">로그인</a>
+					
+				</li>
+				<li>
+					<a class="top_login_picture" href="/login">
+						<img src="top_login_picture.png"/>
+					</a>
+				</li>
+			</ul>
+
+
+			<!--MENU-->
+			<ul class="menu">
+				<li class="home" id="show1">
+					<a href="main_1.html">홈</a>
+				</li>
+				<li class="knet" id="show2">
+					<a href="/knet">케이넷</a>
+				</li>
+				<li class="notice" id="show3">
+					<a href="/notice">공지사항</a>
+				</li>
+				<li class="community">
+					<a href="/community">커뮤니티</a>
+					<ul>
+						<li class="free" id="show4"><a href="/free">자유게시판</a></li>
+						<li class="anonymous" id="show5"><a href="/anonymous">익명게시판</a></li>
+					</ul>
+				</li>
+				<li class="materials">
+					<a href="/materials">자료실</a>
+					<ul>
+						<li class="QandA" id="show6"><a href="/QandA">Q&A</a></li>
+						<li class="seminar" id="show7"><a href="/seminar">세미나</a></li>
+						<li class="project" id="show8"><a href="/project">프로젝트</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		
+		</div>
+		</nav>
+
+		<div style= "height : 45px">
+			</div>
+
+
+		<div class="mid">
+
+			<div class="left">
+
+
+				<!--LOGIN-->
+				
+
+				
+            	<div class="mid_login">
+
+                <!-- Logout div start -->
+         
+              	<div>
+                <form name="logoutform" action="/logout" method="get" autocomplete="off">
+                <!-- show id information-->
+                    <p class="show_information">
+                        <label class="lb" id="id_information" >
+                        	<img  src="top_login_picture.png"/>
+                        </label>   
+                    </p>
+
+                    <button tabindex-"3" class="mid_logout_btn" type="submit">Logout</button>
+                  
+                            
+                </form>
+                </div>
+          
+        
+           		</div>
+
+				<!--SEARCH-->
+				<div class="search">
+					<form name="search" id="search" method="get">
+						<input class="searching" type="text" placeholder="검색해보삼"/>
+					</form>
+				</div>
+
+				<!--BIRTHDAY-->
+				<div class="birthday">
+					<div>
+						<!--<h4>Birthday</h4>-->
+						<img src="birthday.gif"/>
+					</div>
+				</div>
+
+			</div>
+
+			
+			<div class="right">
+				<div>
+					<!-- Title, Author, Day, Plese change css like 게시판-->
+					<div>
+						<div>
+							<div>제목</div><div></div>
+						</div>
+						<div>
+							<div>작성자</div><div></div>
+						</div>
+						<div>
+							<div>일시</div><div></div>
+						</div>
+					</div>
+					<!-- Editor -->
+					<pre data-preload="index/samples/diff.lhs.txt" style="display:none">
 /*
   © Microsoft. All rights reserved.
 
@@ -46,8 +174,8 @@
   Version: 0.5 
 */
 //Hello World!
-</pre>
-<pre data-preload="index/samples/diff.rhs.txt" style="display:none">
+					</pre>
+					<pre data-preload="index/samples/diff.rhs.txt" style="display:none">
 /*
   © Microsoft. All rights reserved.
 
@@ -57,67 +185,82 @@
   Version: 0.5 
 */
 printf("Hello World");
-</pre>
-	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-
-	<section class="try">
-		<div class="container">
-				<div class="span9"  style="display:none">
-					<div class="row">
-						<div class="span4"">
-							<label class="control-label" >Language</label>
-							<select class="language-picker"></select>
-						</div>
-					</div>
-					<div class="editor-frame" >
-						<div class="loading editor" >
-							<div class="progress progress-striped active">
-								<div class="bar"></div>
+					</pre>
+						<section class="try">
+							<div class="container">
+								<div class="span9"  style="display:none">
+									<div class="row">
+										<div class="span4"">
+											<label class="control-label" >Language</label>
+											<select class="language-picker"></select>
+										</div>
+									</div>
+									<div class="editor-frame" >
+										<div class="loading editor" >
+											<div class="progress progress-striped active">
+												<div class="bar"></div>
+											</div>
+										</div>
+										<div id="editor" style="display none"></div>
+									</div>
+								</div>
+								<div class="editor row">
+									<div class="span9">
+										<div class="row">
+											<div class="span8">
+												<div class="checkbox">
+													<label class="control-label">
+														<input id="inline-diff-checkbox" type="checkbox" value=""> Inline diff
+													</label>
+												</div>
+											</div>
+										</div>
+										<div class="editor-frame">
+											<div class="loading diff-editor" style="display: none;">
+												<div class="progress progress-striped active">
+													<div class="bar"></div>
+												</div>
+											</div>
+											<div id="diff-editor"></div>
+											<button> submit</button>
+										</div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div id="editor" style="display none"></div>
-					</div>
-				</div>
-			
-
-			<div class="editor row">
-
-				<div class="span9">
-					<div class="row">
-						<div class="span8">
-							<div class="checkbox">
-								<label class="control-label">
-									<input id="inline-diff-checkbox" type="checkbox" value=""> Inline diff
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="editor-frame">
-						<div class="loading diff-editor" style="display: none;">
-							<div class="progress progress-striped active">
-								<div class="bar"></div>
-							</div>
-						</div>
-						<div id="diff-editor"></div>
-						<button> submit</button>
-					</div>
+						</section>
 				</div>
 			</div>
+
+
+
+
+
+
+		<div class="bottom">
+
+			<div class="terms">
+				<h3>K-NET's policy and terms</h3>
+				<ul>
+						<li>
+						<a href="" data-clk="plc.service">terms--</a>
+					</li>
+					<li>
+						<a href="" data-clk="plc.privacy">privacy</a>
+					</li>
+				</ul>
+				<address class="at_cr">
+					ⓒ
+					<a class="at_ca" href="http://www.knetcorp.com/" target="_blank" data-clk="plc.nhn">K-NET Corp.</a>
+				</address>
+			</div>
 		</div>
-
-	</section>
-</div>
-
-
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/bootstrap.min.js" integrity="sha256-u+l2mGjpmGK/mFgUncmMcFKdMijvV+J3odlDJZSNUu8=" crossorigin="anonymous"></script>
-
-	<script>var require = { paths: { 'vs': 'node_modules/monaco-editor/min/vs' } };</script>
-	<script src="node_modules/monaco-editor/min/vs/loader.js"></script>
-	<script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
-	<script src="node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
-	<script>/// <reference path="../../release/monaco.d.ts" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha256-wS9gmOZBqsqWxgIVgA8Y9WcQOa7PgSIX+rPA0VL2rbQ=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.0/bootstrap.min.js" integrity="sha256-u+l2mGjpmGK/mFgUncmMcFKdMijvV+J3odlDJZSNUu8=" crossorigin="anonymous"></script>
+		<script>var require = { paths: { 'vs': 'node_modules/monaco-editor/min/vs' } };</script>
+		<script src="node_modules/monaco-editor/min/vs/loader.js"></script>
+		<script src="node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+		<script src="node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+		<script>/// <reference path="../../release/monaco.d.ts" />
 
 "use strict";
 
@@ -288,7 +431,7 @@ function changeTheme(theme) {
 	var newTheme = (theme === 1 ? 'vs-dark' : ( theme === 0 ? 'vs' : 'hc-black' ));
 	monaco.editor.setTheme(newTheme);
 }*/
-</script>
+		</script>
 
-</body>
+	</body>
 </html>
