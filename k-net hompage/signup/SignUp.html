@@ -3,16 +3,16 @@
 <head>
 	<title>회원가입</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="signup.css"/>
-	<link rel="stylesheet" type="text/css" href="signup_pc.css"/>
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="clickcr.js"></script>
+	<link rel="stylesheet" type="text/css" href="/signup.css"/>
+	<link rel="stylesheet" type="text/css" href="/signup_pc.css"/>
+	<script src="/query.js"></script>
+	<script src="/clickcr.js"></script>
 </head>
 <body>
 <div id="wrap">
 	<div id="header">
 		<h1>
-			<a href="main_1.html" class="h_logo">K-NET</a>
+			<a href="/main_1.html" class="h_logo">K-NET</a>
 		</h1>
 	</div>
 	<div id="container">
@@ -20,7 +20,7 @@
 			<h2 class="blind">K-net 회원가입</h2>
 			<div class="join_content">
 				<div class="join_form">
-					<form id="join_form" method="post" action="/user2/join.nhn?m=check" onsubmit="return mainSubmit(0);">
+					<form id="join_form" method="post" action="/user/join" onsubmit="return mainSubmit(0);">
 						<input type="hidden" id="birthday" name="birthday" value>
 						<fieldset class="join_form">
 							<legend class="blind">회원가입</legend>
@@ -35,7 +35,7 @@
 								</div>
 								<div id="pswd1Div" class="join_row">
 									<span id="pswd1Img" class="ps_box int_pass">
-									<input type="password" id="pwsd1" name="pswd1" maxlength="20" onfocus="toggleLabel('pswd1Lb','pswd1','in');" onblur="toggleLabel('pswd1Lb','pswd1','out');checkPswd1('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock(event)" onkeydown="checkShiftDownJoin(event);"" placeholder="비밀번호" class="int">
+									<input type="password" id="pwsd1" name="pswd1" maxlength="20" onfocus="toggleLabel('pswd1Lb','pswd1','in');" onblur="toggleLabel('pswd1Lb','pswd1','out');checkPswd1('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock(event)" onkeydown="checkShiftDownJoin(event);" placeholder="비밀번호" class="int">
 										<!--<label id="pswd1Lb" for="pswd1" class="lbl">비밀번호</label>-->
 										<button type="button" disabled title="delete" class="wrg">삭제</button>
 									</span>
@@ -43,8 +43,8 @@
 								</div>
 								<div id="pswd2Div" class="join_row">
 									<span id="pswd2Img" class="ps_box int_pass_check">
-										<input type="password" id="pswd2" name="pswd2" maxlength="20" onfocus="toggleLabel('pswd2Lb','pswd2','in');" onblur="toggleLabel('pswd2Lb','pswd2','out'); checkPswd2('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock2(event)" ; onkeydown=
-											checkShiftDown(event);" placeholder="비밀번호 재확인" class="int">
+										<input type="password" id="pswd2" name="pswd2" maxlength="20" onfocus="toggleLabel('pswd2Lb','pswd2','in');" onblur="toggleLabel('pswd2Lb','pswd2','out'); checkPswd2('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock2(event)" ;
+										 onkeydown="checkShiftDown(event);" placeholder="비밀번호 재확인" class="int">
 										<!--<label id="pswd2Lb" for="pswd2" clas="lbl">비밀번호 재확인</label>-->
 										<button type="button" disabled title="delete" class="wrg">삭제</button>
 									</span>
@@ -81,7 +81,7 @@
 										</div>
 										<div class="bir_yy">
 											<span class="ps_box">
-												<input type="text" id="yy" maxlength="4" value onfocus="toggleLabel('yyLb','yy','in');"" onblur="toggleLabel('yyLb','yy','out'); checkBirthday('check')" placeholder="년(4자)" class="int">
+												<input type="text" id="yy" maxlength="4" value onfocus="toggleLabel('yyLb','yy','in');" onblur="toggleLabel('yyLb','yy','out'); checkBirthday('check')" placeholder="년(4자)" class="int">
 												<!--<label id="yyLb" for="yy" class="lbl">년(4자)</label>-->
 												<button type="button" disabled title="delete" class="wrg">삭제</button>
 											</span>
@@ -109,7 +109,7 @@
 										<span class="cell"></span>
 										<div class="bir_dd">
 											<span class="ps_box">
-												<input type="text" id="dd" maxlength="2" value onfocus="toggleLabel('ddLb','dd','in');"" onblur="toggleLabel('ddLb','dd','out'); checkBirthday('check')" placeholder="일" class="int">
+												<input type="text" id="dd" maxlength="2" value onfocus="toggleLabel('ddLb','dd','in');" onblur="toggleLabel('ddLb','dd','out'); checkBirthday('check')" placeholder="일" class="int">
 												<!--<label id="ddLb" for="dd" class="lbl">일</label>-->
 												<button type="button" disabled title="delete" class="wrg">삭제</button>
 											</span>
@@ -121,7 +121,7 @@
 							<div class="row_group">
 								<div id="phoneDiv" class="join_row join_phone">
 									<span class="ps_box int_phone">
-										<input type="text" id="phone" name="phone" maxlength="100" value onfocus="toggleLabel('phoneLb','phone','in');"" onblur="toggleLabel('phoneLb','phone','out'); checkEmail('check')" placeholder="본인 전화번호(선택)" class="int">
+										<input type="text" id="phone" name="phone" maxlength="100" value onfocus="toggleLabel('phoneLb','phone','in');" onblur="toggleLabel('phoneLb','phone','out'); checkEmail('check')" placeholder="본인 전화번호(선택)" class="int">
 										<!--<label id="phoneLb" for="phone" class="lbl">본인 전화번호(선택)</label>-->
 										<button type="button" disabled title="delete" class="wrg">삭제</button>
 									</span>
@@ -129,7 +129,7 @@
 								</div>
 								<div id="emailDiv" class="join_row join_email">
 									<span class="ps_box int_email">
-										<input type="text" id="email" name="email" maxlength="100" value onfocus="toggleLabel('emailLb','email','in');"" onblur="toggleLabel('emailLb','email','out'); checkEmail('check')" placeholder="본인확인 이메일" class="int">
+										<input type="text" id="email" name="email" maxlength="100" value onfocus="toggleLabel('emailLb','email','in');" onblur="toggleLabel('emailLb','email','out'); checkEmail('check')" placeholder="본인확인 이메일" class="int">
 										<!--<label id="emailLb" for="email" class="lbl">본인확인 이메일</label>-->
 										<button type="button" disabled title="delete" class="wrg">삭제</button>
 									</span>
@@ -173,7 +173,7 @@
 										<span class="cell"></span>
 										<div class="student_id">
 											<span class="ps_box">
-												<input type="text" id="student_id" maxlength="10" value onfocus="toggleLabel('student_idLb','student_id','in');"" onblur="toggleLabel('student_idLb','student_id','out'); checkBirthday('check')" placeholder="학번" class="int">
+												<input type="text" id="student_id" maxlength="10" value onfocus="toggleLabel('student_idLb','student_id','in');" onblur="toggleLabel('student_idLb','student_id','out'); checkBirthday('check')" placeholder="학번" class="int">
 												<!--<label id="student_idLb" for="student_id" class="lbl">학번</label>-->
 												<button type="button" disabled title="delete" class="wrg">삭제</button>
 											</span>
