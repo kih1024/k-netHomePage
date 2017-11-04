@@ -9,10 +9,15 @@ a{text-decoration:none}
 a:active,a:focus,a:hover{text-decoration:underline} 
 .blind{font-size:0;line-height:0;position:absolute;top:0;left:0;visibility:hidden;overflow:hidden;width:1px;height:1px} 
 body{position:relative; background:#f5f6f7} 
-
+.sp{background:url(https://static.nid.naver.com/images/ui/join/pc_sp_join.png) no-repeat}
+@media screen and (-webkit-min-device-pixel-ratio:1.5)
+{.sp{background:url(https://static.nid.naver.com/images/ui/join/t_sp_join.png) 
+	no-repeat;-webkit-background-size:460px auto;background-size:460px auto} 
+}
 #container,#header{margin:0 10px;max-width:768px;min-width:460px} 
-#header{position:relative;overflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:169px;padding:6px 0 0} 
-#header #logo {width:450px;height:180px; margin-left:160px;}
+#header{position:relative;overflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;height:169px;padding:62px 0 0} 
+#header .h_logo{line-height:999px;display:block;overflow:hidden;width:240px;height:44px;margin:0 auto;
+	background:url(https://static.nid.naver.com/images/ui/join/pc_sp_join.png) no-repeat 0 -106px;-webkit-background-size:460px auto;background-size:460px auto} 
 #header .lang{position:absolute;top:14px;right:0;*width:95px} 
 #header .lang .sel{font-size:12px;font-weight:400;min-width:98px;height:30px;padding:5px 8px 5px 7px;padding:5px 6px 6px 7px\9;
 	cursor:pointer;color:#333;border:1px solid #ccc;border-radius:0} 
@@ -26,18 +31,18 @@ html[lang=ko] #header .lang .sel{padding:6px 8px 5px 7px;padding:6px 6px 6px 7px
 a.btn_group_join{text-decoration:underline;color:#333} 
 a.btn_group_join:hover,a.btn_group_join:visited{text-decoration:underline;color:#333} 
 .join_from .error_ch{margin-bottom:-3px} 
-.ps_box{position:relative;display:block;height:27px;background:#fff;
+.ps_box{position:relative;display:block;height:27px;background:#fff url(https://static.nid.naver.com/images/join/pc/ico_join3_2x_20170202.png) 100% 0 no-repeat;
  	-webkit-background-size:97px 900px;background-size:97px 900px} 
 .join_from .lbl{font-size:15px;line-height:18px;position:absolute;z-index:9;top:5px;left:0;display:block;color:#999} 
 .join_row .int {font-size:15px;position:relative;z-index:10;width:100%;height:16px;padding:6px 0;border:none;background:#fff;*position:absolute;*top:0;*left:0;
 	apperance:none;-webkit-apperance:none} 
-.sel{font-size:15px;font-weight:700;line-height:18px;width:100%;height:29px;padding:7px 8px 6px 7px\9;color:#000;border:none;border-radius:0;
-	-webkit-background-size:20px 8px;background-size:20px 8px;*height:auto;
+.sel{font-size:15px;font-weight:700;line-height:18px;width:100%;height:29px;padding:7px 8px 6px 7px\9;color:#000;border:none;border-radius:0;background:#fff 
+	url(https://static.nid.naver.com/images/join/pc/sel_arr_2x.gif) 100% 50% no-repeat;-webkit-background-size:20px 8px;background-size:20px 8px;*height:auto;
 	*margin-top:3px;-webkit-appearance:none} 
 .join_mobile .country_code .country_sel{width:auto} :root 
 .join_mobile .country_code .country_sel{width:100%} 
 .join_from .cell{display:table-cell;width:5px;padding-right:10px;text-indent:-999em;
-	
+	background:url(https://static.nid.naver.com/images/join/pc/ico_join3_2x_20170202.png) -94px -575px no-repeat;
 	-webkit-background-size:97px 900px;background-size:97px 900px;*display:block;*float:left;*padding:0} 
 .join_birth, .join_info{display:table;padding-right:15px;*display:block;*overflow:hidden} 
 .join_birthday, .join_infor{padding:0} 
@@ -56,7 +61,7 @@ a.btn_c{font-size:12px;line-height:33px;display:inline-block;width:84px;height:3
 .error_ch{padding:10px 0 0;text-align:center} 
 .error_ch .error{margin:0} 
 .wrg{position:absolute;z-index:1000;top:5px;right:5px;display:none;width:19px;height:19px;margin:0;padding:0;cursor:pointer;text-indent:-999px;border:0;
-	background-color:transparent;-webkit-background-size:19px 19px;background-size:19px 19px} 
+	background:url(https://static.nid.naver.com/images/join/pc/sp_join.png) no-repeat 0 0;background-color:transparent;-webkit-background-size:19px 19px;background-size:19px 19px} 
 .sex{display:block;height:31px;margin-right:-3px;border:solid 1px #dcdcdc;*margin-top:-31px} 
 .join_sex{overflow:hidden;padding:8px 18px 8px 15px} 
 .row_title{font-size:15px;font-weight:700;line-height:33px;display:inline-block;height:33px;margin-left:2px;color:#999} .join_check .row_title{color:#000} 
@@ -69,18 +74,18 @@ a.btn_c{font-size:12px;line-height:33px;display:inline-block;width:84px;height:3
 .ps_box.int_pass_step4{background-position:100% -336px} 
 .ps_box.int_pass_check{background-position:100% -525px} 
 .ps_box.int_pass_check2{background-position:100% -406px} 
-.btn_join{display:block;height:61px;margin:20px 0 19px; background:#3564f7;*width:460px} 
-.btn_join input{width:100%;height:61px;text-indent:-999em;border:solid #3564f7;background-color: #3564f7;
-	*text-indent:0;*padding-left:900px;-webkit-appearance:none;}
-.btn_join a{ font-family: '굴림', Helvetica,sans-serif; font-size: 30px; color: white;} 
+.btn_join{display:block;height:61px;margin:33px 0 19px;margin:10px 0 19px\9;background:#1fbc02;*width:460px} 
+.btn_join input{width:100%;height:61px;text-indent:-999em;border:1px solid #1eb702;background:#1fbc02
+	 url(https://static.nid.naver.com/images/join/pc/btn_join2_2x.gif) 50% 0 no-repeat;-webkit-background-size:108px auto;background-size:108px auto;
+	 *border:none;*text-indent:0;*padding-left:900px;-webkit-appearance:none} 
 .btn_join input.int_home{padding:0;cursor:pointer;background-position:50% -189px;*padding-left:900px} 
 .jender{position:relative;z-index:10;display:block;float:left;width:49.8%;height:31px;border-right:solid 1px #dcdcdc} 
 .jender+.jender{border:none} 
 .jender input{position:absolute;z-index:9;top:0;left:0;width:100%;height:31px} 
 .jender label{line-height:32px;position:absolute;z-index:10;top:0;left:0;display:block;width:100%;height:31px;cursor:pointer;text-align:center;color:#999;background:#fff} 
-.jender input:checked+label{z-index:100;margin:-1px;color:#4a76ff;border:solid 1px #4a76ff} 
-.jender label.on{z-index:100;margin:-1px;color:#4a76ff;border:solid 1px #4a76ff} 
+.jender input:checked+label{z-index:100;margin:-1px;color:#2eaa08;border:solid 1px #2eaa08} 
+.jender label.on{z-index:100;margin:-1px;color:#2eaa08;border:solid 1px #2eaa08} 
 .ps_box input[type=password]{font-size:14px} 
-.ps_box input:-webkit-input-placeholder{font-size:15px!important} 
-.ps_box input:-moz-placeholder{font-size:15px!important} 
+.ps_box input::-webkit-input-placeholder{font-size:15px!important} 
+.ps_box input::-moz-placeholder{font-size:15px!important} 
 .ps_box input:-ms-input-placeholder{font-size:15px!important}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>로그인</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="signup.css"/>
+	<link rel="stylesheet" type="text/css" href="signup_pc.css"/>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>
+			<a href="main_1.html">K-NET</a>
+			<img id="logo" src="K-Net Logo.gif"/>
+		</h1>
+	</div>
+	<div id="container">
+		<div id="content">
+			<h2 class="blind">K-net 로그인</h2>
+			<div class="join_content">
+				<div class="join_form">
+					<form id="join_form" method="post" action="/user2/join.nhn?m=check" onsubmit="return mainSubmit(0);">
+						<fieldset class="join_form">
+							<legend class="blind">로그인</legend>
+							<div class="row_group">
+								<div id="idDiv" class="join_row">
+									<span class="ps_box int_id">
+										<input type="text" id="id" name="id" value maxlength="20" autocomplete="off" onfocus="toggleLabel('idLb','id','in');" onblur="toggleLabel('idLb','id','out');checkId('first')" placeholder="아이디" class="int">
+										<!--<label id="idLb" for="id" class="lbl">아이디</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+									<div id="idMsg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+								<div id="pswd1Div" class="join_row">
+									<span id="pswd1Img" class="ps_box int_pass">
+									<input type="password" id="pwsd1" name="pswd1" maxlength="20" onfocus="toggleLabel('pswd1Lb','pswd1','in');" onblur="toggleLabel('pswd1Lb','pswd1','out');checkPswd1('check')"; onkeyup="checkShiftUp(event);" onkeypress="checkCapslock(event)" onkeydown="checkShiftDownJoin(event);"" placeholder="비밀번호" class="int">
+										<!--<label id="pswd1Lb" for="pswd1" class="lbl">비밀번호</label>-->
+										<button type="button" disabled title="delete" class="wrg">삭제</button>
+									</span>
+									<div id="pswd1Msg" class="error" style="display: none">필수 정보입니다.</div>
+								</div>
+							</div>
+						</fieldset>
+						<a name="bottom"></a>
+						<div class="error_ch">
+							<span id="joinMsg" class="error" style="display: none">로그인 정보를 확인해주세요.</span>
+						</div>
+						<span class="btn_join">
+							<input type="submit" onclick="clickcr(this,'sup.signup','','', event);" title="로그인" alt="로그인" value="로그인" class="int_join">
+						</span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	 checkBrowser();
+
+	 if("Y" == "N"){
+	 	mainSubmit(0);
+	 }
+
+	 var nCaptcha;
+
+	 $(document).ready(function(){
+	 	nCaptcha = new naver.NCapcha(["id"]);
+
+	 	document.getElementById("nid_t2").value = sp.get();
+	 });
+	 </script>
+</div>
+</body>
+</html>
+	
