@@ -70,7 +70,7 @@ a.btn_c{font-size:12px;line-height:33px;display:inline-block;width:84px;height:3
 .ps_box.int_pass_check{background-position:100% -525px} 
 .ps_box.int_pass_check2{background-position:100% -406px} 
 .btn_join{display:block;height:61px;margin:20px 0 19px;*width:460px} 
-.btn_join input{width:100%;height:61px; background-color: #3564f7;font-family: '굴림', Helvetica,sans-serif; font-size: 20px; color:white; font-weight:bold; }
+.btn_join input{width:100%;height:61px; background-color: #3564f7;font-family: '굴림', Helvetica,sans-serif; font-size: 20px; color:white; }
 .btn_join a{ font-family: '굴림', Helvetica,sans-serif; font-size: 30px; color: white;} 
 .btn_join input.int_home{padding:0;cursor:pointer;background-position:50% -189px;*padding-left:900px} 
 .jender{position:relative;z-index:10;display:block;float:left;width:49.8%;height:31px;border-right:solid 1px #dcdcdc} 

@@ -46,7 +46,7 @@
 							<span id="joinMsg" class="error" style="display: none">로그인 정보를 확인해주세요.</span>
 						</div>
 						<span class="btn_join">
-							<input type="submit" value="로그인" onclick="clickcr(this,'sup.signup','','', event);" title="로그인" alt="로그인" value="로그인" class="int_join">
+							<input type="submit" value="로 그 인" onclick="clickcr(this,'sup.signup','','', event);" title="로그인" alt="로그인" value="로그인" class="int_join">
 						</span>
 					</form>
 				</div>
