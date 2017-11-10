@@ -28,13 +28,17 @@ div{
 /*C:\Users\CHAE YOU LIM\Desktop\k-netHomePage\k-net homepage\K_Net_Main_page\*/
 /*오버워치 폰트 적용하고싶어!!!!*/
 @font-face{
-	font-family: Georgia, "koverwatch", Times, serif;
-	src: url(koverwatch.ttf);
+	font-family: 'koverwatch';
+	src: local('koverwatch.ttf'), "굴림", format('truetype');
+}
+
+#text-element{
+	font-family: 'koverwatch', Arial, sans-serif;
 }
 
 body, div, nav, ul, li,{
 	color: #666;
-	font-family: "koverwatch.ttf", 돋움, tahoma;
+	font-family: 'koverwatch', '굴림', tahoma;
 	font-size: 12px;
 	line-height: 100%;
 }
@@ -96,7 +100,6 @@ nav{
 .mid{
 	position: relative;
 	width: 100%;
-	min-height: 100px;
 	float: left;
 	background-color: #e5e6ea;
 
@@ -108,12 +111,16 @@ nav{
 	float: left;
 	width: 100%;
 	min-width: 1280px;
-	height: 50px;
+	height: 60px;
 	text-align: left;
 	background-color: #CFCFCF;
 	border-top: 1px solid #d6d6d6;
 	margin: 0 auto ;
     text-align: center;
+}
+#bottom ul.links{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 #bottom ul.links li {
    display: inline-block; margin: 0 5px;
@@ -328,7 +335,7 @@ a{
 .left{
 	position: absolute;
 	left: 18.3%;
-	width: 200px;
+	width: 220px;
 	height: 500px;
 	background-color: #e5e6ea;
 	margin-top: 20px;
@@ -347,7 +354,7 @@ a{
 }
 
 .mid_login{
-	width: 93%;
+	width: 85%;
 	background-color: #fff;
 	border: 1px solid #d6d6d6;
 	border-right: 1px solid #d6d6d6;
@@ -379,7 +386,7 @@ a{
 .find{
 	font-size: 12px;
 	float: left;
-	margin-left: 15px;
+	margin-left: 13px;
 }
 
 .register{
@@ -534,6 +541,9 @@ user agent stylesheet input[type="submit" i]{
 	height: 27px;
 	border-bottom: 1px solid #d6d6d6;
 	padding-top: 10px;
+	color: #5D5D5D;
+	font-weight: bolder;
+	font-size: 14px;
 }
 
 .main_notice_board1{
@@ -608,6 +618,9 @@ user agent stylesheet input[type="submit" i]{
 	height: 25px;
 	border-bottom: 1px solid #d6d6d6;
 	padding-top: 9px;
+	color: #5D5D5D;
+	font-weight: bolder;
+	font-size: 14px;
 }
 
 .main_free_board{
@@ -667,6 +680,9 @@ user agent stylesheet input[type="submit" i]{
 	height: 25px;
 	border-bottom: 1px solid #d6d6d6;
 	padding-top: 9px;
+	color: #5D5D5D;
+	font-weight: bolder;
+	font-size: 14px;
 }
 
 .main_QandA_board{
@@ -729,7 +745,9 @@ user agent stylesheet input[type="submit" i]{
 	float:left;
 	padding:5px;
 	border-bottom:1px solid #e5e6ea;
-	color: #51A9DD;
+	color: #5D5D5D;
+	font-weight: bolder;
+	font-size: 14x;
 }
 .main_gallery_list1{
 	width: 349px;
@@ -739,13 +757,13 @@ user agent stylesheet input[type="submit" i]{
 
 }
 .main_gallery_list2{
-	width: 259.5px;
+	width: 261px;
 	height:150px;
 	background-color:orange;
 	float:left;
 }
 .main_gallery_list3{
-	width:150px;
+	width:152px;
 	height:124px;
 	background-color:yellow;
 	float:left;
