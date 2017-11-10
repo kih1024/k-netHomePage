@@ -12,10 +12,17 @@ head{
 }
 
 @media only screen and (min-width: 0px){
+
+@font-face{
+	font-family: 'koverwatch';
+	src: url('koverwatch.ttf'), "굴림", format('truetype');
+}
+
 body{
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
+	font-family: 'koverwatch', '굴림', tahoma;
 	/*background-color: #e5e6ea; */
 	background-color: #e5e6ea; 
 }
@@ -27,10 +34,6 @@ div{
 }
 /*C:\Users\CHAE YOU LIM\Desktop\k-netHomePage\k-net homepage\K_Net_Main_page\*/
 /*오버워치 폰트 적용하고싶어!!!!*/
-@font-face{
-	font-family: 'koverwatch';
-	src: local('koverwatch.ttf'), "굴림", format('truetype');
-}
 
 #text-element{
 	font-family: 'koverwatch', Arial, sans-serif;
@@ -38,7 +41,6 @@ div{
 
 body, div, nav, ul, li,{
 	color: #666;
-	font-family: 'koverwatch', '굴림', tahoma;
 	font-size: 12px;
 	line-height: 100%;
 }
@@ -362,6 +364,10 @@ a{
 	padding-left: 13px;
 	padding-top: 20px;
 	float: left;
+}
+
+.text{
+	width: 190px;
 }
 
 .autologin{
