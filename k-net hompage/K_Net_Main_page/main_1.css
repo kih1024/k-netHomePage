@@ -176,10 +176,11 @@ nav{
 	margin-left: 10px;
 	text-decoration: none;
 	float: right;
-	font-size: 15px;
+	font-size: 12px;
 	color: #5D5D5D;
 	border: 1px solid #d6d6d6;
-	border-radius: 3px;
+	border-radius: 7px;
+	padding: 5px;
 }
 
 /*.top{
@@ -264,7 +265,7 @@ nav{
 .menu > li > ul > li > a:hover,
 .menu > li > ul > li > a:active,.menu > li > ul > li > a:focus{
 	color:#000;
-	border-bottom: 3px solid #f63b3a;
+	border-bottom: 3px solid #8C8C8C;
 }
 
 /*.menu > li.active{
@@ -335,8 +336,40 @@ a{
 	background-color: #fff;
 	border: 1px solid #d6d6d6;
 	margin-bottom: 10px;
-	text-align: center;
-	padding-top:10px;
+	padding-left: 13px;
+	padding-top: 20px;
+	float: left;
+}
+
+.autologin{
+	margin-left: 2px;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.mid_login_btn{
+	width: 176px;
+	height: 30px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	background-color:#5587ED;
+	border-color: #5587ED;
+	border-radius: 8px;
+	color: #F6F6F6;
+	font-weight: bold;
+}
+
+.find{
+	font-size: 12px;
+	float: left;
+	margin-left: 15px;
+}
+
+.register{
+	font-size: 12px;
+	float: left;
+	margin-left: 2px;
 }
 
 .lb img{
@@ -468,7 +501,6 @@ user agent stylesheet input[type="submit" i]{
 	border: 1px solid #d6d6d6;
 	margin-bottom: 7px;
 }*/
-
 
 .main_notice{
 	width:610px;
@@ -671,4 +703,45 @@ user agent stylesheet input[type="submit" i]{
 	margin-bottom:10px;
 	margin-top:10px;
 	clear:both;
+}
+
+.main_gallery_title{
+	width:600px;
+	height:15px;
+	background-color: #fff;
+	float:left;
+	padding:5px;
+	border-bottom:1px solid #e5e6ea;
+	color: #51A9DD;
+}
+.main_gallery_list1{
+	width: 349px;
+	height: 274px;
+	background-color: red;
+	float:left;
+
+}
+.main_gallery_list2{
+	width: 259.5px;
+	height:150px;
+	background-color:orange;
+	float:left;
+}
+.main_gallery_list3{
+	width:150px;
+	height:124px;
+	background-color:yellow;
+	float:left;
+}
+.main_gallery_list4{
+	width:109px;
+	height:62px;
+	float:left;
+	background-color:brown;
+}
+.main_gallery_list5{
+	width:109px;
+	height:63px;
+	background-color:green;
+	float:left;
 }

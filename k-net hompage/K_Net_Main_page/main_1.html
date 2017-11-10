@@ -115,28 +115,36 @@
                 <!-- Login div start -->
                 <div>
                 <form name="loginform" action="/login" method="post" autocomplete="off">
-                    <p class="col-xs-8">
-                        <input class="form-control input-sm " type="text" name="id" maxlength="20" placeholder="아이디"/>
+                    <p class="input">
+                       <!-- <input class="form-control input-sm" type="text" name="id" maxlength="20" placeholder="아이디"/>-->
+                        <input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
                     </p>
-                    <p class=" col-xs-8">
-                        <input class="form-control input-sm" type="password" name="password" maxlength="16" placeholder="비밀번호"/>
+                    <p class="input">
+                        <!--<input class="form-control input-sm" type="password" name="password" maxlength="16" placeholder="비밀번호"/>-->
+                        <input class="text" type="password" name="password" maxlength="20" placeholder="비밀번호"/>
                     </p>
-                    <p class="'col-xs-8">
-                    <button tabindex-"3" class="btn btn-primary col-sm-8" type="submit">로그인</button>
-                  	</p>
+
+                    <label class="autologin">
+                      	<input type="checkbox" name="autologin" value="1"/> 로그인 유지
+                    </label>
+
+       
+                    <button tabindex-"3" class="mid_login_btn" type="submit">LOGIN</button>
+
+
                     <input type="hidden" name="redirect" value="/"/>
-                    	<label class="autologin">
-                      		<input type="checkbox" name="autologin" value="1"/>로그인 유지
-                    	</label>
+                    	
+                    <p class="register">
+                        <a href="/register">회원가입</a>
+                    </p> 
+
                     <p class="find">
                         <a href="/find">
                         아이디/비밀번호 찾기</a>
                     </p>
-                    <p class="register">
-                        <a href="/register">회원가입</a>
-                    </p>
+                    
                 </form>
-                </div>-->
+                </div>
                 <!-- Login div end -->
         
            		</div>
@@ -265,7 +273,22 @@
 
 				<!--MAIN_GALLERY-->
 				<div class="main_gallery">
-
+					<div class="main_gallery_title">갤러리</div>
+					<div class="main_gallery_list1">
+						<img src=""/>
+					</div>
+					<div class="main_gallery_list2">
+						<img src=""/>
+					</div>
+					<div class="main_gallery_list3">
+						<img src=""/>
+					</div>
+					<div class="main_gallery_list4">
+						<img src=""/>
+					</div>
+					<div class="main_gallery_list5">
+						<img src=""/>
+					</div>
 				</div>
 
 			</div>
@@ -274,9 +297,9 @@
 			<!--FACEBOOK
 			<div class="facebook">
 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkwtalk&tabs=timeline&width=320&height=777&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="320" height="678" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-			</div>
+			</div>-->
 
-		</div>-->
+		</div>
 
 
 
