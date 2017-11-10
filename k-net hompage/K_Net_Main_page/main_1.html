@@ -6,8 +6,11 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Welcome to K-net</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="main_1.css">
+
 	<script src="./jquery.js"></script>
+	<script src="./js/bootstrap.js"></script>
 	<script src="./gnb.js"></script>
 </head>
 
@@ -74,7 +77,7 @@
 
 		<!--MAIN_PHOTO-->
 		<div class="jungle">
-			<img src="main_photo_3.png"/>
+			<img src="main_photo_3.jpg"/>
 
 		</div>
 
@@ -92,16 +95,16 @@
 
                 <!-- Logout div start -->
          
-              	<div>
+              <!--<div>
                 <form name="logoutform" action="/logout" method="get" autocomplete="off">
                 <!-- show id information-->
-                    <p class="show_information">
+                 <!--   <p class="show_information">
                         <label class="lb" id="id_information" >
                         	<img  src="top_login_picture.png"/>
                         </label>   
                     </p>
 
-                    <button tabindex-"3" class="mid_logout_btn" type="submit">Logout</button>
+                    <button type="submit" class="btn btn-primary btn-xs"> 로그아웃 </button>
                   
                             
                 </form>
@@ -110,17 +113,17 @@
 
           
                 <!-- Login div start -->
-                <!--<div>
+                <div>
                 <form name="loginform" action="/login" method="post" autocomplete="off">
-                    <p class="input">
-                        <input class="text" type="text" name="id" maxlength="20" placeholder="아이디"/>
+                    <p class="col-xs-8">
+                        <input class="form-control input-sm " type="text" name="id" maxlength="20" placeholder="아이디"/>
                     </p>
-                    <p class="input">
-                        <input class="text" type="password" name="password" maxlength="20" placeholder="비밀번호"/>
+                    <p class=" col-xs-8">
+                        <input class="form-control input-sm" type="password" name="password" maxlength="16" placeholder="비밀번호"/>
                     </p>
-
-                    <button tabindex-"3" class="mid_login_btn" type="submit">Login</button>
-                  
+                    <p class="'col-xs-8">
+                    <button tabindex-"3" class="btn btn-primary col-sm-8" type="submit">로그인</button>
+                  	</p>
                     <input type="hidden" name="redirect" value="/"/>
                     	<label class="autologin">
                       		<input type="checkbox" name="autologin" value="1"/>로그인 유지
@@ -225,25 +228,39 @@
 				<div class="main_notice">
 					<div class="main_notice_title"> &nbsp 공지사항 </div>
 					<div class="main_notice_board1">
-						<div> &nbsp 홈페이지 </div>
-						<div> &nbsp 홈페이지 </div>
-						<div> &nbsp 홈페이지 </div>
+						<div class="main_notice_board1_list1" >&nbsp 홈페이지 </div>
+						<div class="main_notice_board1_list2"> &nbsp 홈페이지 </div>
+						<div class="main_notice_board1_list3"> &nbsp 홈페이지 </div>
 					</div> <!--board1-->
 					<div class="main_notice_board2">
-						<div> &nbsp 홈페이지 </div>
-						<div> &nbsp 홈페이지 </div>
-						<div> &nbsp 홈페이지 </div>
+						<div class="main_notice_board2_list1"> &nbsp 홈페이지 </div>
+						<div class="main_notice_board2_list2"> &nbsp 홈페이지 </div>
+						<div class="main_notice_board2_list3"> &nbsp 홈페이지 </div>
 					</div> <!--board2-->
 				</div>
 
 				<!--MAIN_FREEBOARD-->
 				<div class="main_free">
-
+					<div class="main_free_title"> &nbsp 공지사항 </div>
+					<div class="main_free_board">
+						<div class="main_free_board_list1" >&nbsp 홈페이지 </div>
+						<div class="main_free_board_list2"> &nbsp 홈페이지 </div>
+						<div class="main_free_board_list3"> &nbsp 홈페이지 </div>
+						<div class="main_free_board_list4"> &nbsp 홈페이지 </div>
+						<div class="main_free_board_list5"> &nbsp 홈페이지 </div>
+					</div> 
 				</div>
 
 				<!--MAIN_Q&A-->
 				<div class="main_QandA">
-
+					<div class="main_QandA_title"> &nbsp 공지사항 </div>
+					<div class="main_QandA_board">
+						<div class="main_QandA_board_list1" >&nbsp 홈페이지 </div>
+						<div class="main_QandA_board_list2"> &nbsp 홈페이지 </div>
+						<div class="main_QandA_board_list3"> &nbsp 홈페이지 </div>
+						<div class="main_QandA_board_list4"> &nbsp 홈페이지 </div>
+						<div class="main_QandA_board_list5"> &nbsp 홈페이지 </div>
+					</div> 
 				</div>
 
 				<!--MAIN_GALLERY-->
