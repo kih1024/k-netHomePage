@@ -1,4 +1,17 @@
-﻿html{
+﻿/*C:\Users\CHAE YOU LIM\Desktop\k-netHomePage\k-net homepage\K_Net_Main_page\*/
+/*오버워치 폰트 적용하고싶어!!!!*/
+/* @font-face{
+	font-family: 'koverwatch';
+	font-style:normal;
+	font-weight: normal;
+	src: url('/css_module/fonts/koverwatch.woff');
+}
+
+html, body, h1, h2, h3, h4, h5, h6, li, p{
+	font-family: 'koverwatch.woff' !important;
+} 
+*/
+html{
 	overflow-y: scroll;
 	overflow-x: auto;
 }
@@ -53,7 +66,6 @@ body, div, nav, ul, li,{
 a{color:#000; text-decoration: none;}
 
 li{list-style: none;}
-
 
 .container{
 	margin: 0 auto;
@@ -370,7 +382,7 @@ a{
 }
 
 .text{
-	width: 190px;
+	width: 85%;
 }
 
 .autologin{
@@ -487,8 +499,7 @@ form{
 	height: 111px;
 }
 
-.main_notice_board1_list1{
-	
+.main_notice_board1_list0, .main_notice_board1_list1{
 	width: 304px;
 	height: 27px;
 	padding-top: 9px;
@@ -496,22 +507,12 @@ form{
 }
 
 .main_notice_board1_list2{
-
-	width: 304px;
-	height: 27px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_notice_board1_list3{
-	
 	width: 304px;
 	height: 27px;
 	padding-top: 9px;
 }
 
-.main_notice_board2_list1{
-	
+.main_notice_board2_list0, .main_notice_board2_list1{
 	width: 305px;
 	height: 27px;
 	padding-top: 9px;
@@ -519,17 +520,10 @@ form{
 }
 
 .main_notice_board2_list2{
-	
 	width: 305px;
 	height: 27px;
 	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
 }
-
-.main_notice_board2_list3{
-	width: 305px;
-	height: 27px;
-	padding-top: 9px;}
 
 .main_free{
 	width:299px;
@@ -557,21 +551,7 @@ form{
 	height: 175px;
 }
 
-.main_free_board_list1{
-	width: 299px;
-	height: 25px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_free_board_list2{
-	width: 299px;
-	height: 25px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_free_board_list3{
+.main_free_board_list0, .main_free_board_list1, .main_free_board_list2, .main_free_board_list3{
 	width: 299px;
 	height: 25px;
 	padding-top: 9px;
@@ -579,13 +559,6 @@ form{
 }
 
 .main_free_board_list4{
-	width: 299px;
-	height: 25px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_free_board_list5{
 	width: 299px;
 	height: 25px;
 	padding-top: 9px;
@@ -619,21 +592,7 @@ form{
 	height: 175px;
 }
 
-.main_QandA_board_list1{
-	width: 299px;
-	height: 25px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_QandA_board_list2{
-	width: 299px;
-	height: 25px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_QandA_board_list3{
+.main_QandA_board_list0, .main_QandA_board_list1, .main_QandA_board_list2, .main_QandA_board_list3{
 	width: 299px;
 	height: 25px;
 	padding-top: 9px;
@@ -641,13 +600,6 @@ form{
 }
 
 .main_QandA_board_list4{
-	width: 299px;
-	height: 25px;
-	padding-top: 9px;
-	border-bottom: 1px solid #d6d6d6;
-}
-
-.main_QandA_board_list5{
 	width: 299px;
 	height: 25px;
 	padding-top: 9px;
@@ -678,33 +630,38 @@ form{
 	font-size: 14x;
 }
 .main_gallery_list1{
-	width: 349px;
-	height: 274px;
-	background-color: red;
+	width: 346px;
+	height: 272px;
+	/* background-color: red; */
+	border: 1px solid #d6d6d6;
 	float:left;
 
 }
 .main_gallery_list2{
-	width: 261px;
-	height:150px;
-	background-color:orange;
+	width: 259px;
+	height:148px;
+	/* background-color:orange; */
+	border: 1px solid #d6d6d6;
 	float:left;
 }
 .main_gallery_list3{
-	width:152px;
-	height:124px;
-	background-color:yellow;
+	width:150px;
+	height:122px;
+	/* background-color:yellow; */
+	border: 1px solid #d6d6d6;
 	float:left;
 }
 .main_gallery_list4{
-	width:109px;
-	height:62px;
+	width:107px;
+	height:60px;
 	float:left;
-	background-color:brown;
+	/* background-color:brown; */
+	border: 1px solid #d6d6d6;
 }
 .main_gallery_list5{
-	width:109px;
-	height:63px;
-	background-color:green;
+	width:107px;
+	height:61px;
+	/* background-color:green; */
+	border: 1px solid #d6d6d6;
 	float:left;
 }
