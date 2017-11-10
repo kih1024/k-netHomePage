@@ -11,7 +11,7 @@ head{
 	position: relative;
 }
 
-@media only screen and (min-width: 0px){
+@media only screen and (min-width: 0px){}
 
 @font-face{
 	font-family: 'koverwatch';
@@ -98,7 +98,8 @@ nav{
 }
 
 
-@media only screen and (min-width: 0px){
+@media only screen and (min-width: 0px){}
+
 .mid{
 	position: relative;
 	width: 100%;
@@ -361,9 +362,11 @@ a{
 	border: 1px solid #d6d6d6;
 	border-right: 1px solid #d6d6d6;
 	margin-bottom: 10px;
-	padding-left: 13px;
+	padding-left: 8px;
 	padding-top: 20px;
 	float: left;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 .text{
@@ -417,87 +420,6 @@ form{
 	font: inherit;
 	display: inline;
 }
-
-
-/*.loginbox{
-	position: relative;
-	padding: 10px 15px 0 15px;
-}
-
-form{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	outline: 0;
-	display: inline;
-}
-
-input[type="hidden" i]{
-	-webkit-appearance: initial;
-	background-color: initial;
-	padding: initial;
-	border: initial;
-	display: none;
-}
-
-user agent stylesheet input[type="submit" i]{
-	align-items: flex-start;
-	cursor: default;
-	box-sizing: border-box;
-}
-
-.left .mid_login .input1{
-	border: none;
-	height: 26px;
-	line-height: 26px;
-	font-size: 13px;
-	width: 104px;
-	border-bottom: 1px solid #bbb;
-	padding-left: 20px;
-	background: no-repeat;
-}
-
-.left .mid_login .id{
-	background-position: 0 0;
-}
-
-.left .mid_login .pw{
-	background-position: 0 -26px;
-}
-
-.login_btn_box{
-	position: absolute;
-	right: 15px;
-	top: 15px;
-}
-
-.login_submit{
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	background: #f0f0f0;
-	font-size: 12px;
-	color: #888;
-	text-shadow: 1px 1px 0px #fff;
-	width: 52px;
-	height: 52px;
-	text-align: center;
-	line-height: 52px;
-}
-
-.clear{
-	clear: both;
-}
-
-.join{
-	padding: 10px;
-	text-align: center;
-	font-size: 11px;
-	margin-top: 5px;
-}*/
-
-
 
 
 .searching{
@@ -786,5 +708,3 @@ user agent stylesheet input[type="submit" i]{
 	background-color:green;
 	float:left;
 }
-
-.
